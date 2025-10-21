@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:41:31</sys_created_on>
+        <sys_id>a30cc12cc3b432101248292599013149</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_1834930_office_0.office manager</sys_name>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_security_acl display_value="">2e0cc5e8c3b432101248292599013144</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_a30cc12cc3b432101248292599013149</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:41:31</sys_updated_on>
+        <sys_user_role display_value="x_1834930_office_0.office manager" name="x_1834930_office_0.office manager">23f84388c3f8fe50124829259901316c</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Manager">5bf84388c3f8fe501248292599013154</application>
+        <file_path/>
+        <instance_id>313f7b06eb6d6e5cc040fddacad0cd21</instance_id>
+        <instance_name>dev348309</instance_name>
+        <name>sys_security_acl_role_a30cc12cc3b432101248292599013149</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-21 18:41:31</sys_created_on><sys_id>a30cc12cc3b432101248292599013149</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.x_1834930_office_0.office manager</sys_name><sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package><sys_policy/><sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope><sys_security_acl display_value="">2e0cc5e8c3b432101248292599013144</sys_security_acl><sys_update_name>sys_security_acl_role_a30cc12cc3b432101248292599013149</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-21 18:41:31</sys_updated_on><sys_user_role display_value="x_1834930_office_0.office manager" name="x_1834930_office_0.office manager">23f84388c3f8fe50124829259901316c</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1685564021</payload_hash>
+        <record_name>.x_1834930_office_0.office manager</record_name>
+        <reverted_from/>
+        <source>3eab4fc4c3f8fe5012482925990131fe</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:41:31</sys_created_on>
+        <sys_id>eefc456cc3b4321012482925990131bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a081392410000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:41:31</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>e2fc456c2db4321035527d7ba01ca9bb</update_guid>
+        <update_guid_history>e2fc456c2db4321035527d7ba01ca9bb:-1685564021</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=".x_1834930_office_0.office manager">150dc16cc3b43210124829259901318e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:41:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>8a82f76b327c41deb0dd467dd30fb371</sys_id>
+        <sys_metadata>a30cc12cc3b432101248292599013149</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_1834930_office_0.office manager</sys_name>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_parent display_value="x_1834930_office_0_office_base">2e0cc5e8c3b432101248292599013144</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_scope_delete display_value="">6f10a5956cd14eb29234699168d52b11</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_a30cc12cc3b432101248292599013149</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_a30cc12cc3b432101248292599013149">eefc456cc3b4321012482925990131bb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:41:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
