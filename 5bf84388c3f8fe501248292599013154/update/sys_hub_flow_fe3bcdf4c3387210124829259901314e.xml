@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=5309000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>auto_add_office_manager_to_base</internal_name>
+        <label_cache>[{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Office Base Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1834930_office_0_office_base","column_name":"sys_id","usedInstances":{"692ef6ec-51e8-481d-807f-0ba590c55373":["basesysid"]}},{"name":"Created_1.current.manager.sys_id","label":"Trigger - Record Created➛Office Base Record➛Base Manager➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"692ef6ec-51e8-481d-807f-0ba590c55373":["managersysid"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Office Base Record","reference":"x_1834930_office_0_office_base","reference_display":"Office Base","type":"reference","base_type":"reference","usedInstances":{"d7e8a8cc-7784-4540-bbcb-441bfedb7191":["base"]},"attributes":{}},{"name":"692ef6ec-51e8-481d-807f-0ba590c55373.valid","label":"1 - Validate Office/Base Manager➛valid","reference_display":"valid","type":"boolean","base_type":"boolean","usedInstances":{"9a2a3213-df3d-4bf4-97ca-86604aa6fced":["condition"]},"attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","uiUniqueId":"564e8c4e-8f4f-4212-b447-7087a8ff999d"}},{"name":"Created_1.current.manager","label":"Trigger - Record Created➛Office Base Record➛Base Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1834930_office_0_office_base","column_name":"manager","usedInstances":{"d7e8a8cc-7784-4540-bbcb-441bfedb7191":["user"]}}]</label_cache>
+        <master_snapshot>477fdd70c3f87210124829259901314a</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Auto Add Office Manager to Base</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>9f7fdd70c3f872101248292599013178</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 13:12:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fe3bcdf4c3387210124829259901314e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Auto Add Office Manager to Base</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name>sys_hub_flow_fe3bcdf4c3387210124829259901314e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=fe3bcdf4c3387210124829259901314e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=fe3bcdf4c3387210124829259901314e"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1834930_office_0_office_base">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9f7fdd70c3f872101248292599013178</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+        <table>x_1834930_office_0_office_base</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>fe3bcdf4c3387210124829259901314e</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:52</sys_created_on>
+        <sys_id>db7fdd70c3f872101248292599013179</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+        <trigger display_value="">9f7fdd70c3f872101248292599013178</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=fe3bcdf4c3387210124829259901314e^sys_idNOT INdb7fdd70c3f872101248292599013179"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=fe3bcdf4c3387210124829259901314e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=fe3bcdf4c3387210124829259901314e^sys_idNOT IN3a3b8178c37872101248292599013180"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>fe3bcdf4c3387210124829259901314e</id>
+        <name>Auto Add Office Manager to Base</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 13:12:22</sys_created_on>
+        <sys_id>3a3b8178c37872101248292599013180</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 13:12:22</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3a3b8178c37872101248292599013180"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=fe3bcdf4c3387210124829259901314e^sys_idNOT IN037fdd70c3f87210124829259901310b,4b7f5930c3f8721012482925990131d8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Auto Add Office Manager to Base">fe3bcdf4c3387210124829259901314e</model>
+        <model_id>fe3bcdf4c3387210124829259901314e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_fe3bcdf4c3387210124829259901314e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:51</sys_created_on>
+        <sys_id>037fdd70c3f87210124829259901310b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=037fdd70c3f87210124829259901310b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Auto Add Office Manager to Base">fe3bcdf4c3387210124829259901314e</model>
+        <model_id>fe3bcdf4c3387210124829259901314e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_fe3bcdf4c3387210124829259901314e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:51</sys_created_on>
+        <sys_id>4b7f5930c3f8721012482925990131d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4b7f5930c3f8721012482925990131d8"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=fe3bcdf4c3387210124829259901314e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fe3bcdf4c3387210124829259901314e"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=fe3bcdf4c3387210124829259901314e^sys_idNOT IN8b7fdd70c3f872101248292599013117"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Auto Add Office Manager to Base">fe3bcdf4c3387210124829259901314e</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:51</sys_created_on>
+        <sys_id>8b7fdd70c3f872101248292599013117</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:51</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUJPLZACutixnbdd24sGSBPUzrYPQSpQEmkLpSlXopR4F/n3DkVJlnVxfM3lZbEmKc6ZwzNnyDz81Bh2CNOutHvsMKJdaD4XJOSY3a+WBIaFHLY5Xsi5BeYeFkG40q5EGJMLLQg9EmpXxoWWYBaT6Sq69uAjWJp+kX2uZdPw+9k2+lZnYOl2QKnvErv4j4MjudDzoyXDq7+y9XfpJPqqJt25z7yQcO3q4fFCW+IQgggJ4GdlSgB4eyMzdKtS8CU+l7p4YBLdtQzLNHXd7HcM59JyDNOzMNF1WFelpZKPaGBnTQZ5FoR7BEJRzCLSQFxIsHfH2apYMQfeFXML/Bz5P2D3vi7XUQJZuUTNFT/tjCc17M4DYOluKfyAqxGFU00GLF7wW4VfMkwojpnIGYaROIL9yFJCliAyRHQ6D54mecBvPk+zyyZZ4GJW/MJChL4TCxLJo6A+g0OxFTdREIcp+sl4eDcZ2X9/uR/+Pp7Yk/H0fnI9vB+PtJc0L/u/WO6oEGZYbJXOSyGLbz5h8gAzxiM39Jfiiyv8hGRgXi7Wkh4G3PNTTmqydvOpaFPWWUL5Uep6q7Ld0ua5uv8Z/1mXsBo8TLrDMsxUupeXGHsEt0jXoSXpltNvAC0amCjnvU3E2cguKu7o+jvpWFXawTJeBB5ho/V2GkzOZiBsny9jIdl6wlxEtghs7Hl2iUe5FDC9pmuV28urMg5jDh/YxXnUxZzSVvB340cA9wEKMecm3RLm6U225STmKICDg3+QG4dAjUC5tdHrBZ5ljNIpYcQVJRHQ71H51x9+FPl8VkJdBE05qMUswoGYUJ6Sih0dGfzxwEqu85tUeKtU9OHlnB9UWsqGQalDqKn3ZCEbuuVQQ+/pXUw9S9dds1TKdYit2EVFE2cp6f0KOkrVyHbQXpX4DLxeLoeddJRsijAnQWok843haaAZJ4JmSmgV/7P2MsBCrGp4tKnZbamduP9jL8HwhberD+5ogZQFT+C9B9ifg91/Z2EQc6/qR3JP5HO0XoF+yfj79YRWSIOQbAewueKdTHDNcK5RzFdnsz+LGs6AdIgOrmeB4TndwcBxsUlp77JHTKNif2twjYg/he29IrekSa9tFtionKRJcHuY3xEAa0a4N8DjLTCTa6MBqrnPYXVPc8JtgBraTJpZzfFmzPdIPndwudeiJOsCP1XJ32T4ZXTaH7hdo9dze/BsgYKnHeJgo2N28aB3afW7lYKvwdsGXTQQ8yaPmWgVpUBazOC7mvpYD/RzqjYiQsh2tH+X5nCPTb/BKkipU8pjQamnBCG6Dfhv1+t1aEqgAaYv2lO1611QyINF54XhBGJeuy9A6K8wvhFa3jNbWHnPN1VFD8lmWmd6U5FOvzugVrPH0EGTx6whtoP/8NeLHUskaS22pnvGropPGgun9WJwgIYr4infGLZcaU5FinFyUszzkWIdfY3KK7T1IXkI2E/Uw9KLxTGNTMYkdkDL7j0KEEwgCIJ8irK/JRIPOSsk5gQoZXBfhoBIRj/WtsttpA6lUPDbAlE38Fo7g2GU3aDetVNVTv0tnsDE6+Fu12q5EQ+qT+AmmK9k8eH71t5lkTRV2dbmtd++1T0b21dJs5s62bExnTTr5u50XNaN/em1rI/vPNse8A0oPmhPefwfKJpBbVcfAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=fe3bcdf4c3387210124829259901314e^sys_idNOT IN437fdd70c3f872101248292599013119,837fdd70c3f87210124829259901311b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Validate Office/Base Manager">3e599d78c3b872101248292599013163</action_type>
+        <action_type_parent display_value="Validate Office/Base Manager">862fc97cc3787210124829259901310b</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Auto Add Office Manager to Base">fe3bcdf4c3387210124829259901314e</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:51</sys_created_on>
+        <sys_id>437fdd70c3f872101248292599013119</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:51</sys_updated_on>
+        <ui_id>692ef6ec-51e8-481d-807f-0ba590c55373</ui_id>
+        <values>H4sIAAAAAAAA/+1TXW+bMBT9L34GBOQDyNu0qVKlbZWWrS9VhYx9nVgyhtomLYvy33cdIJ2irs2mPexhjz4+9+Mc+9ztieRkRUS6KAqe5WxW5VmaxEk6z9PCg3EyS5YZCYimNSCzohZsb7EqIDuqOo/t9+8NUAe8TCLWGQPaRcgpJT8ckMalbRXtby9js61UHEGyursPSEsNznVgyGp/duX6FkpFK1DYdO2M1Bssv1TOVOj1rHt7zV+W6IcgZKf2jeF+lyQg8ORAc8BxgioLAamp5tQ1picrZzoEUCW/0ao/MbZSO2xGPPfJyu/YOY/j2DMFoC4Gw+3pWI7WDTDbNpLBTetkowfE0UqNNaxRXa0/Dwq86SBop9xkOiKdxX7Q+qX9GuNOYr1tHr9MA6+kPuobL1XDqDqdqEMXqs6B9Y/Rya/ozcdz/0FBjf3LmrYtImVrmp089sQV62ij8BAJ1TziLlZudESZ1xOhdTS6QvzDEb6lRnpxn7ANFgfjuJ+fopPftHzo4Nq/+DxbzhM+W4YiFYtwXi2KMI/zLEzSgvGCxzNRFeRwtLZ86LyowaTRjnJwFAmWGdm6d7jUDkblh2BKCbz6rarnL4R/gW7AXBKUkfqbgXmh6q8E522FU+G4wVl2zoT/Ij7p//j8W/FhlAKHGMI4KzA+Ka9CmgkR5kIsixwqMcvzP47P/Q/oTRY7ZgYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Auto Add Office Manager to Base">fe3bcdf4c3387210124829259901314e</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>9a2a3213-df3d-4bf4-97ca-86604aa6fced</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:51</sys_created_on>
+        <sys_id>837fdd70c3f87210124829259901311b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:51</sys_updated_on>
+        <ui_id>d7e8a8cc-7784-4540-bbcb-441bfedb7191</ui_id>
+        <values>H4sIAAAAAAAA/+VUTW/bMAz9K4HOhifZaerktg/01hbohl6aVpAtOhEgy54kp82C/PdRspO13QIUw4BhmG8kn8j3SJp3O6IkWZAZA3o2Z7MqZ3meUZoVU1bO8pJlMhcAU5IQIxpApBelBh6NhGyE7oPzibMin85zytu6VhVwykvhgFtYKeet8Ko1CJfKdVpsb8dXHxAyuXkJqdZKSwuGLO7uE9IJi4U8WLLYvQr5bQdcixI0ZvoSSE2uBlJvFfTi8QmBocprX2tlIEQTAk8ejASsVwvtICGNMFL41m7JwtseHRaEvDZ6e0SslfGYkATsk1PfMHtBA64GlFbBEDuafGzZ4K7WLTb3uou9ip5IbAy2um/M1SAiNBtq0Wt/aDZ6epyIhC5QDiRGRvXndft4cyh4oUxUNwZ1Wwl9tIT3VpW9BxfmARoaTMQb0XXKrHhn242Kj5FLk640Gmmt20cs6tTKpKIKxFPskEgv0P8pum+FVUHFJabBx/uonn/tQ91Bx8iYD6IR4CqrOv8e021gJLdPDpssgc5PDp6VPwYdl9c92+Kwssue0lzudh9xch4kZ2nVW+yM3+8f6t5EBSNmedjnJVksyXVc/Mm7SdzqS2HECuySJMshfcScl7QqWFlU+XlxnjHKsmmRzbOz+ZyynNWzCHdbx5V8I37/gEO1J0mnzcADyTuPoQGY/fwr/k/Sf/PEQIOCPUyGliVv3rZDggsFWrpfrN/hxowF+GYsMN4Z9qfuDJvR+P2dazPw/MeOzbO7f+Ls3H8Hi2YUBEIHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=fe3bcdf4c3387210124829259901314e"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=fe3bcdf4c3387210124829259901314e^sys_idNOT IN037fdd70c3f87210124829259901311a,437fdd70c3f87210124829259901311c"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0b7fdd70c3f872101248292599013119</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Auto Add Office Manager to Base">fe3bcdf4c3387210124829259901314e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:51</sys_created_on>
+        <sys_id>037fdd70c3f87210124829259901311a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:51</sys_updated_on>
+        <ui_id>9a2a3213-df3d-4bf4-97ca-86604aa6fced</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lUBnW6Aky7F9C1oEKNA0QBPk0gbCilzZRClSFSk7ruF/71IPx2hs1Gh77E2aJXdnRrPQLjCNqxpnH82NtXKpg8WX51EgtcfoeRdIESyCgkERzXnEk3iaxIzFs0mUT5M8ikUCCEkwCjSUSCe50UI6aXTWAqNgDarxhSdQUlzdgYYl1oQLaSsF26czZb6SStTY86mgpm6OKovdLyW3rTBTkKOiLg+ulnpJ1y9lPVx8N9C++tgi5/X4eYTbYZKphacVsVGALw61QBpdgLI4CkrQApyptwekRhD3Wr0CK6kdtQv84Rcrf1DvOE39wQJJI8eueHjNet86mK+M5HhfeYId4iBX/R1uVFPqT50O7zgW0Cg3OE5IY6kfVp60Z9FTKh5WZvN5GHgrdSuwLyrDQR3ewJENeePQ+g+DCktqlJVQVWROVtVmLdvLxKUMl/SFMSyU2dBQn7UQuCcekkcQ3hL+voWfoJZexR21abPgaeZgJc/aXFI7V5OEfWtL9r3xhDqBvZSsc4MOWF7Lyt3QnDX2rPejPtRzSIs0YunpeEymJ0JwlOfdbjqPsZgiH6cRzsaTWSTGM3ZdjFkO6ZzxNE2uk3Dtc73ff20YS0RL+030/6LTv9iSC2x4syWnrTmzGvFvVsNruXAzGGP/V+N4NaTNuoj32trhf7wZzz7e3QTb5UYgl5aIPHrsw/BX8IUtBUDyY2hj6m9ewiu2/wkLz6kNXwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4b7fdd70c3f87210124829259901311b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Auto Add Office Manager to Base">fe3bcdf4c3387210124829259901314e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>9a2a3213-df3d-4bf4-97ca-86604aa6fced</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:51</sys_created_on>
+        <sys_id>437fdd70c3f87210124829259901311c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:51</sys_updated_on>
+        <ui_id>f1b84e38-b61e-4b5b-808c-088d61f709af</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=fe3bcdf4c3387210124829259901314e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=fe3bcdf4c3387210124829259901314e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_fe3bcdf4c3387210124829259901314e^sys_idNOT IN077f5930c3f8721012482925990131db,077fdd70c3f87210124829259901310d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fe3bcdf4c3387210124829259901314e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:51</sys_created_on>
+        <sys_id>077f5930c3f8721012482925990131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fe3bcdf4c3387210124829259901314e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:51</sys_created_on>
+        <sys_id>077fdd70c3f87210124829259901310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_fe3bcdf4c3387210124829259901314e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_fe3bcdf4c3387210124829259901314e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_fe3bcdf4c3387210124829259901314e"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>auto_add_office_manager_to_base</internal_name>
+        <label_cache>[{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Office Base Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1834930_office_0_office_base","column_name":"sys_id","usedInstances":{"692ef6ec-51e8-481d-807f-0ba590c55373":["basesysid"]}},{"name":"Created_1.current.manager.sys_id","label":"Trigger - Record Created➛Office Base Record➛Base Manager➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"692ef6ec-51e8-481d-807f-0ba590c55373":["managersysid"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Office Base Record","reference":"x_1834930_office_0_office_base","reference_display":"Office Base","type":"reference","base_type":"reference","usedInstances":{"d7e8a8cc-7784-4540-bbcb-441bfedb7191":["base"]},"attributes":{}},{"name":"692ef6ec-51e8-481d-807f-0ba590c55373.valid","label":"1 - Validate Office/Base Manager➛valid","reference_display":"valid","type":"boolean","base_type":"boolean","usedInstances":{"9a2a3213-df3d-4bf4-97ca-86604aa6fced":["condition"]},"attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","uiUniqueId":"564e8c4e-8f4f-4212-b447-7087a8ff999d"}},{"name":"Created_1.current.manager","label":"Trigger - Record Created➛Office Base Record➛Base Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1834930_office_0_office_base","column_name":"manager","usedInstances":{"d7e8a8cc-7784-4540-bbcb-441bfedb7191":["user"]}}]</label_cache>
+        <master>true</master>
+        <name>Auto Add Office Manager to Base</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Auto Add Office Manager to Base">fe3bcdf4c3387210124829259901314e</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>477fdd70c3f87210124829259901314a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=477fdd70c3f87210124829259901314a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=477fdd70c3f87210124829259901314a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=477fdd70c3f87210124829259901314a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=477fdd70c3f87210124829259901314a^sys_idNOT IN037fdd70c3f87210124829259901314b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>477fdd70c3f87210124829259901314a</id>
+        <name>Auto Add Office Manager to Base</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:52</sys_created_on>
+        <sys_id>037fdd70c3f87210124829259901314b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=037fdd70c3f87210124829259901314b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=477fdd70c3f87210124829259901314a^sys_idNOT IN037fdd70c3f872101248292599013159,837fdd70c3f87210124829259901314c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Auto Add Office Manager to Base">477fdd70c3f87210124829259901314a</model>
+        <model_id>477fdd70c3f87210124829259901314a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_477fdd70c3f87210124829259901314a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:52</sys_created_on>
+        <sys_id>037fdd70c3f872101248292599013159</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=037fdd70c3f872101248292599013159"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Auto Add Office Manager to Base">477fdd70c3f87210124829259901314a</model>
+        <model_id>477fdd70c3f87210124829259901314a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_477fdd70c3f87210124829259901314a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:52</sys_created_on>
+        <sys_id>837fdd70c3f87210124829259901314c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=837fdd70c3f87210124829259901314c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=477fdd70c3f87210124829259901314a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=477fdd70c3f87210124829259901314a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=477fdd70c3f87210124829259901314a^sys_idNOT IN177fdd70c3f872101248292599013169"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Auto Add Office Manager to Base">477fdd70c3f87210124829259901314a</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:52</sys_created_on>
+        <sys_id>177fdd70c3f872101248292599013169</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUJPLZACutixnbdd24sGSBPUzrYPQSpQEmkLpSlXopR4F/n3DkVJlnVxfM3lZbEmKc6ZwzNnyDz81Bh2CNOutHvsMKJdaD4XJOSY3a+WBIaFHLY5Xsi5BeYeFkG40q5EGJMLLQg9EmpXxoWWYBaT6Sq69uAjWJp+kX2uZdPw+9k2+lZnYOl2QKnvErv4j4MjudDzoyXDq7+y9XfpJPqqJt25z7yQcO3q4fFCW+IQgggJ4GdlSgB4eyMzdKtS8CU+l7p4YBLdtQzLNHXd7HcM59JyDNOzMNF1WFelpZKPaGBnTQZ5FoR7BEJRzCLSQFxIsHfH2apYMQfeFXML/Bz5P2D3vi7XUQJZuUTNFT/tjCc17M4DYOluKfyAqxGFU00GLF7wW4VfMkwojpnIGYaROIL9yFJCliAyRHQ6D54mecBvPk+zyyZZ4GJW/MJChL4TCxLJo6A+g0OxFTdREIcp+sl4eDcZ2X9/uR/+Pp7Yk/H0fnI9vB+PtJc0L/u/WO6oEGZYbJXOSyGLbz5h8gAzxiM39Jfiiyv8hGRgXi7Wkh4G3PNTTmqydvOpaFPWWUL5Uep6q7Ld0ua5uv8Z/1mXsBo8TLrDMsxUupeXGHsEt0jXoSXpltNvAC0amCjnvU3E2cguKu7o+jvpWFXawTJeBB5ho/V2GkzOZiBsny9jIdl6wlxEtghs7Hl2iUe5FDC9pmuV28urMg5jDh/YxXnUxZzSVvB340cA9wEKMecm3RLm6U225STmKICDg3+QG4dAjUC5tdHrBZ5ljNIpYcQVJRHQ71H51x9+FPl8VkJdBE05qMUswoGYUJ6Sih0dGfzxwEqu85tUeKtU9OHlnB9UWsqGQalDqKn3ZCEbuuVQQ+/pXUw9S9dds1TKdYit2EVFE2cp6f0KOkrVyHbQXpX4DLxeLoeddJRsijAnQWok843haaAZJ4JmSmgV/7P2MsBCrGp4tKnZbamduP9jL8HwhberD+5ogZQFT+C9B9ifg91/Z2EQc6/qR3JP5HO0XoF+yfj79YRWSIOQbAewueKdTHDNcK5RzFdnsz+LGs6AdIgOrmeB4TndwcBxsUlp77JHTKNif2twjYg/he29IrekSa9tFtionKRJcHuY3xEAa0a4N8DjLTCTa6MBqrnPYXVPc8JtgBraTJpZzfFmzPdIPndwudeiJOsCP1XJ32T4ZXTaH7hdo9dze/BsgYKnHeJgo2N28aB3afW7lYKvwdsGXTQQ8yaPmWgVpUBazOC7mvpYD/RzqjYiQsh2tH+X5nCPTb/BKkipU8pjQamnBCG6Dfhv1+t1aEqgAaYv2lO1611QyINF54XhBGJeuy9A6K8wvhFa3jNbWHnPN1VFD8lmWmd6U5FOvzugVrPH0EGTx6whtoP/8NeLHUskaS22pnvGropPGgun9WJwgIYr4infGLZcaU5FinFyUszzkWIdfY3KK7T1IXkI2E/Uw9KLxTGNTMYkdkDL7j0KEEwgCIJ8irK/JRIPOSsk5gQoZXBfhoBIRj/WtsttpA6lUPDbAlE38Fo7g2GU3aDetVNVTv0tnsDE6+Fu12q5EQ+qT+AmmK9k8eH71t5lkTRV2dbmtd++1T0b21dJs5s62bExnTTr5u50XNaN/em1rI/vPNse8A0oPmhPefwfKJpBbVcfAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=477fdd70c3f87210124829259901314a^sys_idNOT IN537fdd70c3f872101248292599013167,9f7fdd70c3f872101248292599013167"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Validate Office/Base Manager">3e599d78c3b872101248292599013163</action_type>
+        <action_type_parent display_value="Validate Office/Base Manager">862fc97cc3787210124829259901310b</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>3e599d78c3b872101248292599013163</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Auto Add Office Manager to Base">477fdd70c3f87210124829259901314a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:52</sys_created_on>
+        <sys_id>537fdd70c3f872101248292599013167</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+        <ui_id>692ef6ec-51e8-481d-807f-0ba590c55373</ui_id>
+        <values>H4sIAAAAAAAA/+1Ty27bMBD8F54lQZIfknwrHAQI0DZA3eYSBMJKXNoEqEdIyolr+N+7tCSncIPWBnoqeuRwlzsz3HncM8nZgol4lmU8SctJkSZxFEbxNI0zB4bRJJonzGM1VEiVBRg0O0NdHtuC6hy23y81gkWeR0HZaY21Dagml/xwoDIuTatg93BZdbmRihPIFo9PHmtB01yLmi32Z1eXEldQoBqYr3bmjr8vxu5aBxmrZb0ezh+H1tUINpo7KpHH8NVizZE4CFAGPVZBzcE2escWVncEkEh+X6vdqWIja0uPMVf7auR3GpeGYegqBZKsEvvb0zEfnOthcQMWiElX2k4PpeWmkSWa3hCOAjpllz9jfcF9a2VT9y0WCjV2N6qr6s+9F+z0wPhRhHSGSGDrlDrugxCx2jQvX0aWt7I+mjJcqqYEdTqBJeuKzjo+e9bJr2cu98gvPqPCiibmFbQtIXmrm608TiHSVbBWdAiEal6InZHrOoDSKQzoByC4JfzmCD+Alk7uJ3qGmt24b7V87vDO7c40mU8jPpn7IhYzf1rMMj8N08SP4qzkGQ8nosjYwWO0IUsFxrwZRT+UP3dOZm/bYFDee+xaSi1b+4FIbXHw4uCNWcPfrmzxtp60UrBGfUnchtIrY/dO15Xx+7OWMX7DrLMEnkm8JoTx/xD+AyEsAZBjiH6YZBTCmBc+JEL4qRDzLMVCTNL0L4bw6Qca/Ih28gYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Auto Add Office Manager to Base">477fdd70c3f87210124829259901314a</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>9a2a3213-df3d-4bf4-97ca-86604aa6fced</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:52</sys_created_on>
+        <sys_id>9f7fdd70c3f872101248292599013167</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+        <ui_id>d7e8a8cc-7784-4540-bbcb-441bfedb7191</ui_id>
+        <values>H4sIAAAAAAAA/+VVTW/bMAz9K4HOhifZaerktqXoaW2BduilaQXZohMB8sckuW0W5L+Plpw06xqsA3YplpvIR+m9Z5K52xAlyYxMGNCTKZsUKUvThNIkG7N8kuYskakAGJOI1KICRDqRa+D+EJFHobs++MxZlo6nKeVNWaoCOOW5sMANLJV1RjjV1AiXyrZarG+Hqi8IGV3/CilWSksDNZnd3UekFQYfcmDIbPMq9V7aWuSgEfqt531Ehlu3b8a+HtaOLkOiMbLnQyMCzw5qCUikFNpCRCpRS+EasyYzZzoMGBDyqtbrPWKlaocXkh77bNUPfDajPa4EVFZAyO2PfHAshMsz4cQN3ly4zgzQYtWg3zZ4IqEUnXbzw1gAXLXeX1/iZQ7Vje6q+jJYQvYX7D4QRjr8ihLaXmfPfJBR3qyap+sdy3NVe0uGpG4Kofcn4ZxReed6PhsCGiq8iFeibVW95K1pHpUvRi5VvNR4iEvdPOGjVi3rWBQ98RhtFfE5xs98+FYY1au4wGuweBsRu7ZzLax90YIm8u9dzyQoGzTwYENfUhjVus/4wCMMdLfRbh4k0OnRxmL5SyP5EbAHs9A3/qKjNJWbzRwbwIHkLC46g1657fah7GqvacAsdlOxILMFufLjM/o08rNxIWqxBLMg0SJc7zGnOS0ylmdFepqdJoyyZJwl0+RkOqUsZeXEw9EPruQ78dsH/MzmKOm4CjyQvHWYCsDk94H+n6T/5aL6cz/tFtW5Ai3tGw2221JQoWcOeGi4V5tqSI5uh+Swrdi/2lZsQv3vA+2sIO7Dr6yDf6cjy+v+Jxj/4tnOBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=477fdd70c3f87210124829259901314a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=477fdd70c3f87210124829259901314a^sys_idNOT IN037fdd70c3f872101248292599013165,577fdd70c3f872101248292599013166"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0b7fdd70c3f872101248292599013119</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Auto Add Office Manager to Base">477fdd70c3f87210124829259901314a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:52</sys_created_on>
+        <sys_id>037fdd70c3f872101248292599013165</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+        <ui_id>9a2a3213-df3d-4bf4-97ca-86604aa6fced</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnWaAky7F9CxwEKJA0QBPk0gbCiqRsohSpipQd1/C/dynJDyQO6iA99mbOLpczox14Q0zjqsbZR3NlrZxrMv3+HBCpPYa/N0RyMiUFhSKasIgl8SiJKY3HwygfJXkU8wQEJCQgGkqBncxoLp00OmuBgCxBNb7wBEryizvQMBc14lzaSsH66Z0yW0jFa9HzqaDGaQ4r082r0rn8FORCYetsR/DitkXeZ+7Wlcetq6We9+fbfsrDDjQ196wiGhDx4oTmAvkUoKwISAmagzP1eo/UAvi9VgdgIbXDccQ3v1j5Gx+M09Q3FgIlMtEV98est62Di2twgFQa5pq6b2ULI5mwnTlcFNAoNzvGuob7ykvtrjjI1e62UU2pv3aOkP2A3VdCpLFIQlReqafe6ygeFmb1bcfyRurWlb6oDAO1P4FD7/LGeT4bIpQocVBWQlWho1lVm6VsLyOXMpzjVoiwUGaFj/r9DIF54iEaC+EN4tct/AS19CrucEy7P55mDlayrN1lHIc2CbINiF3bmQJrDyLR3exX4yl2kntxWeePv8JqWbkrfHkpeh3boI/GBNIijWh6evWGoxMLdpSKzWY0iUUxEmyQRmI8GI4jPhjTy2JAc0gnlKVpcpmES5+O7fZHQ2nCWyFvAvSJSR/L2hmC32TttAkfCVj8l4B5KWfmi1L6P2CfDpi0WReLXlv7+D/M17MPSffm3msmLVJ79NiX3T+UL6xxuSQ7hlam/ulFHbDtH8cfhUfrBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4b7fdd70c3f87210124829259901311b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Auto Add Office Manager to Base">477fdd70c3f87210124829259901314a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>9a2a3213-df3d-4bf4-97ca-86604aa6fced</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:52</sys_created_on>
+        <sys_id>577fdd70c3f872101248292599013166</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+        <ui_id>f1b84e38-b61e-4b5b-808c-088d61f709af</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=477fdd70c3f87210124829259901314a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=477fdd70c3f87210124829259901314a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_477fdd70c3f87210124829259901314a^sys_idNOT IN477fdd70c3f87210124829259901315d,877fdd70c3f872101248292599013156"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_477fdd70c3f87210124829259901314a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:52</sys_created_on>
+        <sys_id>477fdd70c3f87210124829259901315d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_477fdd70c3f87210124829259901314a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:52</sys_created_on>
+        <sys_id>877fdd70c3f872101248292599013156</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_477fdd70c3f87210124829259901314a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_477fdd70c3f87210124829259901314a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_477fdd70c3f87210124829259901314a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>fe3bcdf4c3387210124829259901314e</sys_id>
+        <latest_snapshot>477fdd70c3f87210124829259901314a</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=fe3bcdf4c3387210124829259901314e^sys_idNOT INdf7fdd70c3f87210124829259901317a"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>fe3bcdf4c3387210124829259901314e</plan_id>
+        <snapshot>477fdd70c3f87210124829259901314a</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 14:40:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>df7fdd70c3f87210124829259901317a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 14:40:52</sys_updated_on>
+        <trigger display_value="">9f7fdd70c3f872101248292599013178</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=fe3bcdf4c3387210124829259901314e"/>
+</record_update>
