@@ -3,5 +3,6 @@
         <element label="Base" max_length="32" name="base" reference="x_1834930_office_0_office_base" type="reference"/>
         <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
         <element label="Function" max_length="32" name="function" reference="x_1834930_office_0_function" type="reference"/>
+        <element label="Rejection Reason" max_length="4000" name="rejection_reason" type="string"/>
     </element>
 </database>

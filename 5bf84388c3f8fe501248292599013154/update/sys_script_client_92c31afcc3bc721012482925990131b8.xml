@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Office/Base Unique validation</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    var ga = new GlideAjax('x_1834930_office_0.OfficeBaseValidation');
+    ga.addParam('sysparm_name', g_form.getValue('name'));
+    ga.addParam('sysparm_city', g_form.getValue('city'));
+    ga.addParam('sysparm_state', g_form.getValue('state'));
+    ga.addParam('sysparm_sys_id', g_form.getUniqueValue());
+
+  //  var submitted = false;
+
+    ga.getXMLAnswer(function(response) {
+        if (response === 'duplicate_name') {
+            g_form.addErrorMessage('A base with this name already exists.');
+        } else if (response === 'duplicate_city_state') {
+            g_form.addErrorMessage('A base with this city and state already exists.');
+ //       } else if (!submitted) {
+      //      submitted = true;
+   //         g_form.submit();
+        }
+    });
+
+    return false;
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-22 18:30:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>92c31afcc3bc721012482925990131b8</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Office/Base Unique validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name>sys_script_client_92c31afcc3bc721012482925990131b8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-22 19:21:01</sys_updated_on>
+        <table>x_1834930_office_0_office_base</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
