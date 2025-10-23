@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1834930_office_0.BaseRegistrationGuard</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>BaseRegistrationGuard</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var BaseRegistrationGuard = Class.create();
+BaseRegistrationGuard.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    isBaseFull: function() {
+        var baseId    = this.getParameter('sysparm_base_id')    || '';
+        var excludeId = this.getParameter('sysparm_exclude_id') || '';
+        var out = { ok: true, count: 0, capacity: 0 };
+
+        if (!baseId) return JSON.stringify({ ok: false, reason: 'MISSING_BASE' });
+
+        var baseGR = new GlideRecord('x_1834930_office_0_office_base');
+        if (!baseGR.get(baseId)) return JSON.stringify({ ok: false, reason: 'INVALID_BASE' });
+
+        var cap = parseInt(baseGR.getValue('max_capacity'), 10) || 0;
+        out.capacity = cap;
+
+        if (cap > 0) {
+            var reg = new GlideRecord('x_1834930_office_0_base_registration');
+            reg.addQuery('base', baseId);
+            reg.addQuery('state', 'IN', '1,2');
+            if (excludeId) reg.addQuery('sys_id', '!=', excludeId);
+            reg.query();
+            var cnt = 0; while (reg.next()) cnt++;
+            out.count = cnt;
+
+            if (cnt >= cap) out.ok = false;
+        }
+        return JSON.stringify(out);
+    },
+
+    hasUserActiveRegistration: function() {
+        var userId    = this.getParameter('sysparm_user_id')    || '';
+        var excludeId = this.getParameter('sysparm_exclude_id') || '';
+        if (!userId) return JSON.stringify({ ok: true });
+
+        var dup = new GlideRecord('x_1834930_office_0_base_registration');
+        dup.addQuery('user', userId);
+        dup.addQuery('state', 'IN', '1,2');
+        if (excludeId) dup.addQuery('sys_id', '!=', excludeId);
+        dup.setLimit(1);
+        dup.query();
+
+        if (dup.next()) {
+            return JSON.stringify({
+                ok: false,
+                registration: dup.getUniqueValue(),
+                base: dup.getValue('base'),
+                state: dup.getValue('state')
+            });
+        }
+        return JSON.stringify({ ok: true });
+    },
+
+    type: 'BaseRegistrationGuard'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-23 20:12:10</sys_created_on>
+        <sys_id>8a833741c378f210124829259901313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BaseRegistrationGuard</sys_name>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name>sys_script_include_8a833741c378f210124829259901313f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-23 20:12:10</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>8a833741c378f210124829259901313f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-23 20:12:10</sys_created_on>
+        <sys_id>86e4fb4dc338f21012482925990131f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-23 20:12:10</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Base Registration Avoid bypass on base</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+
+  if (g_form._om_cap_inflight) return false;
+  if (g_form._om_cap_allow === true) { g_form._om_cap_allow = false; return true; }
+
+  var baseId = g_form.getValue('base');
+  if (!baseId) return true;
+
+  g_form._om_cap_inflight = true;
+
+  var action = (g_form.getActionName && g_form.getActionName()) || '';
+
+  var ga = new GlideAjax('x_1834930_office_0.BaseRegistrationGuard');
+  ga.addParam('sysparm_name', 'isBaseFull');
+  ga.addParam('sysparm_base_id', baseId);
+
+  ga.addParam('sysparm_exclude_id', g_form.getUniqueValue() || '');
+
+  ga.getXMLAnswer(function(answer) {
+    g_form._om_cap_inflight = false;
+
+    var res = {};
+    try { res = JSON.parse(answer || '{}'); } catch (e) {
+      var err = 'Could not validate base capacity. Please try again.';
+      g_form.addErrorMessage(err);
+      alert(err);
+      return;
+    }
+
+    if (res.ok === false) {
+      var msg = 'This base has reached its maximum capacity.';
+      if (typeof res.count !== 'undefined' && typeof res.capacity !== 'undefined')
+        msg = 'This base has reached its maximum capacity (' + res.count + '/' + res.capacity + ').';
+      g_form.addErrorMessage(msg);
+      alert(msg);
+      return;
+    }
+
+    g_form._om_cap_allow = true;
+
+    if (typeof g_form.submit === 'function') {
+
+      try { action ? g_form.submit(action) : g_form.submit(); return; } catch (e) {}
+    }
+    if (typeof window.gsftSubmit === 'function') {
+      try { gsftSubmit(null, g_form.getFormElement(), action || 'sysverb_update'); return; } catch (e) {}
+    }
+
+    g_form.getFormElement().submit();
+  });
+
+  return false;
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-23 20:32:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>15297785c378f21012482925990131da</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Base Registration Avoid bypass on base</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name>sys_script_client_15297785c378f21012482925990131da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-23 20:52:42</sys_updated_on>
+        <table>x_1834930_office_0_base_registration</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

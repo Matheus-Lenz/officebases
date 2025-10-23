@@ -8,62 +8,61 @@
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
         <cat_item display_value="Base Registration">dc739c28c3b03210124829259901317a</cat_item>
-        <cat_variable>IO:43630960c3b432101248292599013149</cat_variable>
+        <cat_variable/>
         <condition/>
         <description/>
         <field/>
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>Base Registration capacity validation</name>
+        <name>Base Registration onLoad validation</name>
         <order/>
         <published_ref/>
-        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-    if (isLoading || newValue === '') return;
+        <script><![CDATA[function onLoad() {
+  g_form.setValue('is_user_already_registered', '');
 
-    var ga = new GlideAjax('x_1834930_office_0.BaseRegistrationValidation');
-    ga.addParam('sysparm_name', 'checkBaseCapacity');
-    ga.addParam('sysparm_base_id', newValue);
+  var userId = g_form.getValue('user');
+  if (!userId) return;
 
-    ga.getXMLAnswer(function(response) {
-        if (response === 'FULL') {
-            spModal.alert('The maximum capacity for this base has been reached. Please select another base.')
-                .then(function() {
-                    g_form.setValue('base', '');
-                });
-        }
-    });
+  var ga = new GlideAjax('x_1834930_office_0.BaseRegistrationValidation');
+  ga.addParam('sysparm_name', 'checkUserAlreadyRegistered');
+  ga.addParam('sysparm_user_id', userId);
+
+  ga.getXMLAnswer(function(ans) {
+    var isDup = (ans === 'ALREADY_REGISTERED');
+    g_form.setValue('is_user_already_registered', isDup ? 'true' : 'false');
+  });
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-10-23 13:55:55</sys_created_on>
+        <sys_created_on>2025-10-23 18:43:33</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>458e5e49c3b0f21012482925990131d5</sys_id>
+        <sys_id>2b606f81c3f4f210124829259901312f</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name>Base Registration capacity validation</sys_name>
+        <sys_name>Base Registration onLoad validation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
         <sys_policy/>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
-        <sys_update_name>catalog_script_client_458e5e49c3b0f21012482925990131d5</sys_update_name>
+        <sys_update_name>catalog_script_client_2b606f81c3f4f210124829259901312f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-23 18:23:10</sys_updated_on>
+        <sys_updated_on>2025-10-23 19:00:21</sys_updated_on>
         <table/>
-        <type>onChange</type>
+        <type>onLoad</type>
         <ui_type>10</ui_type>
-        <va_supported>false</va_supported>
+        <va_supported>true</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>458e5e49c3b0f21012482925990131d5</id>
+        <id>2b606f81c3f4f210124829259901312f</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-10-23 13:55:55</sys_created_on>
-        <sys_id>a2ced649c3b0f21012482925990131f9</sys_id>
+        <sys_created_on>2025-10-23 18:43:33</sys_created_on>
+        <sys_id>3b90af45c3f4f2101248292599013114</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-23 13:55:55</sys_updated_on>
+        <sys_updated_on>2025-10-23 18:43:33</sys_updated_on>
         <table>catalog_script_client</table>
         <use_es_latest>false</use_es_latest>
     </sys_es_latest_script>
