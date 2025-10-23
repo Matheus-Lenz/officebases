@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1834930_office_0.BaseRegistrationValidation</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>BaseRegistrationValidation</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var BaseRegistrationValidation = Class.create();
+BaseRegistrationValidation.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    checkBaseCapacity: function() {
+        var baseId = this.getParameter('sysparm_base_id');
+        if (!baseId) return 'OK';
+
+        var baseGR = new GlideRecord('x_1834930_office_0_office_base');
+        if (!baseGR.get(baseId)) return 'OK';
+
+        var maxCapacity = baseGR.getValue('max_capacity');
+        if (!maxCapacity) return 'OK';
+
+        var regGR = new GlideRecord('x_1834930_office_0_base_registration');
+        regGR.addQuery('base', baseId);
+        regGR.addQuery('state', 'IN', '1,2');
+        regGR.query();
+
+        var count = 0;
+        while (regGR.next()) count++;
+
+        return count >= maxCapacity ? 'FULL' : 'OK';
+    },
+
+    checkUserAlreadyRegistered: function() {
+        var userId = this.getParameter('sysparm_user_id');
+        if (!userId) return 'OK';
+
+        var regGR = new GlideRecord('x_1834930_office_0_base_registration');
+        regGR.addQuery('user', userId);
+        regGR.addQuery('state', 'IN', '1,2');
+        regGR.query();
+
+        return regGR.hasNext() ? 'ALREADY_REGISTERED' : 'OK';
+    }
+
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-23 13:52:29</sys_created_on>
+        <sys_id>929d1a09c3b0f21012482925990131c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BaseRegistrationValidation</sys_name>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name>sys_script_include_929d1a09c3b0f21012482925990131c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-23 13:52:29</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>929d1a09c3b0f21012482925990131c8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-23 13:52:29</sys_created_on>
+        <sys_id>040e5a09c3b0f21012482925990131ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-23 13:52:29</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
