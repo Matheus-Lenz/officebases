@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="DELETE">
+        <category display_value="Office Base API">8d2f50a9c3fc36101248292599013141</category>
+        <order>1</order>
+        <property display_value="x_1834930_office_0.Weather API – Base URL" name="x_1834930_office_0.Weather API – Base URL">cc3d1ce5c3fc36101248292599013159</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 17:55:20</sys_created_on>
+        <sys_id>9f2fd8e5c3fc361012482925990131be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1834930_office_0.Weather API – Base URL.Office Base API</sys_name>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_9f2fd8e5c3fc361012482925990131be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 17:55:20</sys_updated_on>
+    </sys_properties_category_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Office Manager">5bf84388c3f8fe501248292599013154</application>
+        <file_path/>
+        <instance_id>313f7b06eb6d6e5cc040fddacad0cd21</instance_id>
+        <instance_name>dev348309</instance_name>
+        <name>sys_properties_category_m2m_9f2fd8e5c3fc361012482925990131be</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Office Base API">8d2f50a9c3fc36101248292599013141</category><order>1</order><property display_value="x_1834930_office_0.Weather API – Base URL" name="x_1834930_office_0.Weather API – Base URL">cc3d1ce5c3fc36101248292599013159</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-24 17:55:20</sys_created_on><sys_id>9f2fd8e5c3fc361012482925990131be</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1834930_office_0.Weather API – Base URL.Office Base API</sys_name><sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package><sys_policy/><sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope><sys_update_name>sys_properties_category_m2m_9f2fd8e5c3fc361012482925990131be</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-24 17:55:20</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+        <payload_hash>1062392404</payload_hash>
+        <record_name>x_1834930_office_0.Weather API – Base URL.Office Base API</record_name>
+        <reverted_from/>
+        <source>3eab4fc4c3f8fe5012482925990131fe</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 17:55:20</sys_created_on>
+        <sys_id>5b2f90a9c3fc3610124829259901310a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a175c5e630000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 17:55:20</sys_updated_on>
+        <type>Category Property</type>
+        <update_guid>5f2f90a985fc3610513427d47ebddd09</update_guid>
+        <update_guid_history>5f2f90a985fc3610513427d47ebddd09:1062392404</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 17:56:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties_category_m2m">sys_properties_category_m2m</sys_db_object>
+        <sys_id>adc48ec191df4d2fbdff302abf7464d1</sys_id>
+        <sys_metadata>9f2fd8e5c3fc361012482925990131be</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1834930_office_0.Weather API – Base URL.Office Base API</sys_name>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_scope_delete display_value="">6f10a5956cd14eb29234699168d52b11</sys_scope_delete>
+        <sys_update_name>sys_properties_category_m2m_9f2fd8e5c3fc361012482925990131be</sys_update_name>
+        <sys_update_version display_value="sys_properties_category_m2m_9f2fd8e5c3fc361012482925990131be">5b2f90a9c3fc3610124829259901310a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 17:56:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

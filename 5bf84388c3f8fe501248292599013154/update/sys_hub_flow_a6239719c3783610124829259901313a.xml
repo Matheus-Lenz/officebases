@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=3560000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=28857000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>26000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>auto_approval_for_base_registration</internal_name>
-        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Base Registration Record","reference":"x_1834930_office_0_base_registration","reference_display":"Base Registration","type":"reference","base_type":"reference","usedInstances":{"50e3b071-46c5-4c8f-a183-7f01ec426732":["record"],"3c8b8ef2-1ede-4d80-8738-c407d20f2c82":["base_registration"]},"attributes":{}},{"name":"92b62db2-1dd3-44de-b44a-bb1eb3fa50cf.isadmin","label":"1 - Validate Office Admin➛isAdmin","reference_display":"isAdmin","type":"boolean","base_type":"boolean","usedInstances":{"daa086e5-782f-4545-9ed9-8ec9dcb72837":["condition"]},"attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1f317a32-cca3-47c3-a4fc-f1c7a9db6d55"}},{"name":"Created_1.current.sys_created_by","label":"Trigger - Record Created➛Base Registration Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_1834930_office_0_base_registration","column_name":"sys_created_by","usedInstances":{"92b62db2-1dd3-44de-b44a-bb1eb3fa50cf":["created_by"]}}]</label_cache>
+        <label_cache>[{"name":"Created_1.current.sys_created_by","label":"Trigger - Record Created➛Base Registration Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_1834930_office_0_base_registration","column_name":"sys_created_by","usedInstances":{"92b62db2-1dd3-44de-b44a-bb1eb3fa50cf":["created_by"]}},{"name":"92b62db2-1dd3-44de-b44a-bb1eb3fa50cf.isadmin","label":"1 - Validate Office Admin➛isAdmin","reference_display":"isAdmin","type":"boolean","base_type":"boolean","usedInstances":{"daa086e5-782f-4545-9ed9-8ec9dcb72837":["condition"]},"attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1f317a32-cca3-47c3-a4fc-f1c7a9db6d55"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Base Registration Record","reference":"x_1834930_office_0_base_registration","reference_display":"Base Registration","type":"reference","base_type":"reference","usedInstances":{"50e3b071-46c5-4c8f-a183-7f01ec426732":["record"],"3c8b8ef2-1ede-4d80-8738-c407d20f2c82":["base_registration"]},"attributes":{}}]</label_cache>
         <master_snapshot>6dad5fd5c3b8361012482925990131b0</master_snapshot>
         <master_snapshot_digest/>
         <name>Auto Approval for Base Registration</name>
@@ -23,8 +23,8 @@
         <outputs/>
         <pre_compiled>false</pre_compiled>
         <remote_trigger_id>39ad5fd5c3b8361012482925990131fb</remote_trigger_id>
-        <run_as>system</run_as>
-        <run_with_roles/>
+        <run_as>user</run_as>
+        <run_with_roles name="x_1834930_office_0.office admin">6bf84388c3f8fe501248292599013172</run_with_roles>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a6239719c3783610124829259901313a</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Auto Approval for Base Registration</sys_name>
         <sys_overrides/>
         <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
         <sys_update_name>sys_hub_flow_a6239719c3783610124829259901313a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:35</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:24:13</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -82,14 +82,14 @@
         <identifier>a6239719c3783610124829259901313a</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-10-24 13:22:35</sys_created_on>
-        <sys_id>c4c0a31dc3b836101248292599013127</sys_id>
+        <sys_created_on>2025-10-24 20:24:13</sys_created_on>
+        <sys_id>40418d65c3b076101248292599013179</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:35</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:24:13</sys_updated_on>
         <trigger display_value="">39ad5fd5c3b8361012482925990131fb</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=a6239719c3783610124829259901313a^sys_idNOT INc4c0a31dc3b836101248292599013127"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=a6239719c3783610124829259901313a^sys_idNOT IN40418d65c3b076101248292599013179"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=a6239719c3783610124829259901313a"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=a6239719c3783610124829259901313a^sys_idNOT IN2e239719c3783610124829259901313c"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -300,7 +300,7 @@
         <action_type_parent display_value="Skip approval task for Office Manager">48fe5719c3b83610124829259901314d</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>6d8fd399c3b836101248292599013159</compiled_snapshot>
         <display_text/>
         <flow display_value="Auto Approval for Base Registration">a6239719c3783610124829259901313a</flow>
         <generation_source/>
@@ -310,12 +310,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-24 13:22:34</sys_created_on>
         <sys_id>27b0631dc3b836101248292599013160</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:34</sys_updated_on>
+        <sys_updated_by>Office Manager App Admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 20:25:23</sys_updated_on>
         <ui_id>3c8b8ef2-1ede-4d80-8738-c407d20f2c82</ui_id>
-        <values>H4sIAAAAAAAA/5VSW2vbMBT+K0PPjvGdOG/rRmGwrdBtfSlFHEvHiUCWXFlOk4X89x05XpaFUrZHne9cvoseD0xJtmJVuWxlXtcib5Z5lSZpViyzOivrOknztKpZxAx0SJ0NDMgdrtXgHXhlDUFb0GPADocPDsGj5GksRufQ+OORcKmGXsP+YW6jitgoLQlnq8eniPXgaLlHx1aHK8jve+QaGtQ0eI8tEiKQNvwr7d+zgfe7K95vSAp3CXIXF62TgWEaMdx5NBKJQQt6wIh1YCR46/bnCvkg74z+U9go40/aO9gN6idtz7Po4sCK7Xi6zIs6T7htWyWQJ/w1aucRPvtKozdB3f3ffWJjacldPz2nyx4a/R+HhNVjZ76eTAoxYguj9hcxjjQksQ9mBHWz1Pbbxr6cs7pVZvJtBrUVoM8v8N6pZvQ4hOhH9Z1s//xK2qixoxO8g75XZs17Z7dqWkssu3it6RG32r4QnUGtTQwiiIgpFYhvqf5xKj+AU8GDL7SGhqP54lXQo/ph1POIn8IXaxAEVmW5yKBsFwVU5QLSrFkkRVnWyzYRWDTsOKXCn8cg7WTVbAo/eU8Ng3Cq9++J1xZn/cenXxwDFe2AAwAA</values>
+        <values>H4sIAAAAAAAA/5WS3W7bMAyFX2XQtWP4Jw7i3G0pAgzYVqDdelMUAi3RiQBZdmUpTRbk3UfZRpp1xbBd+hySOvzoxxNTkq3YoljWMi9LkVfLfJEmaTZfZmVWlGWS5umiZBEz0CBVVtAjt7hVvbPgVGvI2oP2wTud1hbBoeRpLLy1aNz5TL5Ufafh+DCVkSJ2Skvy2erxKWIdWBru0LLV6Y31r+k0VKineB/exPtLcnfsgmWxRnpS4CR9mabdXemtlSFgGjE8ODQSKVkNuseINWAkuNYeLwphkLdGvwo7Zdy4egOHXv2kV/Msunp4xQ48XebzMk94W9dKIE/4e5EvLXzCSq2fwtZ3v9fVN+Dg3lkvnLcX7C0N7ke0Emvw2q2vtbHgthtmDC0OKv0f6USrfWO+jcTZ5ZGr03tqktgFggHJxKe+37UvF9wbZQbYk6lbAfqqFMGK3UahDj+H8U1FtRED56yqvAu7nJhX3/+87Si+d13U2FAe3kDXKbPlnW33ashAKzXxVtNHXOv2hbL3amtiEGHjmO4O8Yb0m0F+AKsCsK80Zgjl1Q+jnj1+DlErBIGLophlUNSzOSyKGaRZNUvmRVEu60TgvGLniPXHfq2h718x0hL82QcII9QJHx+vFFqEVZ37SKH2OJE6P/0ClMDz1t4DAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
@@ -332,12 +332,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-24 13:09:02</sys_created_on>
         <sys_id>2dad5fd5c3b83610124829259901318d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:34</sys_updated_on>
+        <sys_updated_by>Office Manager App Admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 20:25:23</sys_updated_on>
         <ui_id>50e3b071-46c5-4c8f-a183-7f01ec426732</ui_id>
-        <values>H4sIAAAAAAAA/+1UUWvbMBD+K8HPxsh2GpK8rQuBPayFbPSlK0K2zolAljxZTpOF/PedbDlN0q0LJTAG05tOd999392HHneB4ME0GAIn8SQe5WmcpgkhyXgYZ6M0ixOeMoA4CAPFSsBMA7k2HO9rJhsX2O0+GmAWOI2jvDEGlN3v8Z2LupJs++DTMJKvhOT4Hkwfn8KgYgYRLZhgujt7stsKqGQZSCyc6bwpEXTwaYYYl7Ltqxc93XP6rgfeuUenwgXxyfGJSRjAxoLigO0KJmsIg5Ipzqw222BqTYMBVM3vldweMlZC2U5pyTa1+IH4Q+LyCkBpuZ/C4Ur9hPrhaJHDfWWFVl3Eskz2k9OyKdVdJ8HNFgrWSHs026ZGPKgcZUeiY1h8WennRd9vLlSrzrOVOmfycGPWGpE1Fmq3DpDQDqVkVSXUklZGr0VbjFTKaCnxEhVSP2PPWixVxHLHO8IBsWiO8VkbfmBGOBGfEQaL9614+r1xfTsZnjBtNbeCabsoTK1zIyr7AYHX4GnuQ2/X7OYtA+STl30fYb5YdkPjcTqcpITqosCpU0IzhgM0sBS1NazdwSsH32LKYHGa8j5Lf3WkBncdqUsFnRT/RqA39UnMe/rmap4e/yVPe0b/mKn/ZGWSvPmXHW26dW99ZOPa4rf7rSEk5clru569vtOpUCKmhUGHGl7MuQeYC5C8/oWI3qq+AV37Bocv+Gp+jUekPf9/4iv+xE8/AQx08pw6CAAA</values>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPKEoIRcDbBkKa1LUSnXjpKsuxb8CS8zHboTDEf99N4oQMqo5KfUHLm++Hfc7xufHzgUhBpmQIwg8mwYiHQRgOfH8wHgbRKIyCgQgZQED6JGUJYKUGnmmB6y1TRRk4HGYamAVBA48XWkNqj0fMC2lyxfYrV4YRvpFKYJ5Mn1/6JGcad7SgyfRwlroWkmIRKCxdNpjOMdp9Xq5FxosEcVHZBO9d59xlet/mmMGmEk7g9wnsLKQCEEjMlIE+SVgqmM30nkytLjCApMVjqvZtxUamtiaasJ2Rv/HkoV/WxYDMuBOhXVInUB2O58yyJ9yZ20K3emWSg6k1ERCzQtlZN1YXPOZWZmndYlmkmu5MFUn6UCtC2g0691EYBAF5ybNEXtOKnzbZ67IBuZBpJYmjqDLOVLti1moZFbaEcyCgoNI4YXku0zXNdbaVVTNCSby1woUXq+wVzzRynXqMl7g9VJV5C4zPq/CKaVmS+I7bYPOxT8zezBQz5kQFNaS/ihJJTcxRoJUKlQS0ckLZzLXM7Rc8agsO+LHvTB/dvecwPjkZqrPnyfg7GozD4ST0aRbHeA/UpxFDSTWspbGaVbdyMQdfsaS3/LvkY4NxBexmMH5UdnibhpuNi9h9t7f3UCfcZNx92mSMb2kyHI2bH41/DYQ/ePeX23FSNQOmMwzG4hPws/D9UAwuTX+W/Zjfr0DV+H0hQQnzBszG7JAgLAu0hn1meJfsrVyyfQ4+zfXByK++G/L+f/MqvPwB3TFZyQwJAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Validate Office Admin">10ec5f95c3b836101248292599013184</action_type>
@@ -354,12 +354,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-24 13:09:02</sys_created_on>
         <sys_id>69ad5fd5c3b836101248292599013188</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:33</sys_updated_on>
+        <sys_updated_by>Office Manager App Admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 20:25:23</sys_updated_on>
         <ui_id>92b62db2-1dd3-44de-b44a-bb1eb3fa50cf</ui_id>
-        <values>H4sIAAAAAAAA/5VRS2vbQBD+K2XPttBaciz7FloChSaBps0lBDHaHdkLq5WyDyeq8X/vrCQ7YHJIjvPN43vM04EpyTZsIVAs6/VSZFWRXfGUL/JisV4s1+uUZ7y4YjNmoEGaFBbBoyyrnrA96BDBw+H7BPNEBGvR+MT1rnwfPh5pXCrXaegfv7YldkpLarLN0/OMdWBJiEfLNoeLlu87LDVUqOn4g7fKbGn9s/5OixP7t8HgR6YjDWHuRNBaGdXwGcM3j0YiEdagHc5YA0aCb23PNt4GAuiOvDe6P0/slPF0jMXZN6f+0eUiTdM4WSM5Ezh2z2U5hTjCYtcqgfedV60ZEQ+VnnZEq0Nj7kYLMX6sIWh/ip+Q4OgedlF0lDFpqh927evvE+GNMoO/qalbAfpcgacUquDRxXcE9ecimxH5dfkT1NgQY9lA1xFSdrbdq4GFRDfJVlOR1Lp9JXVObU0CIjpMKExIbgj/McCPYFW0e0tnaDnS/TXqJeDP4ecpvZtzPl+tUjHPeVHNAWQ+z/KVTPNVsZRZxo5DtOVLiKbGkKY4yjFRGnDCqs5fk4Q9Ts6Pz/8BClg4njoDAAA=</values>
+        <values>H4sIAAAAAAAA/5VSy27bMBD8lYJnWZAsOZZ9KxwEKNA2QNPmEgTCilzZBChK4cOJKvjfu5Rku0h7aI87O7s7M+TTwKRgW7bkyFf1ZsWzqshu0iRd5sVys1xtNkmapcUNi5iGBonJDYJDUVY9YUdQPoDDsJvhNObeGNQutr0tr+TTiehC2k5B//h/U/wglaAm2z49R6wDQ0IcGrYd3rX+1YmCCtXVyofRyt/sub4LmHVG6v1cf56HH85ga0QQk0YM3xxqgaSiBmUxYg1oAa41Pds64wmg5eJeq/7COEjtaBkL3Dcrf9K5IkmSwKyRjHGcupeynDOc4PoWHJASz503M5UfWsnRTpEIrMErt/sdmwj3nZOtnkYcVOo83Srf6K9TGOyy4PxkhHhLIrALToP22Uj9cGhfv51V3kk9hjI3VctBXSpwFF3lXdAzMC+/v0t5Qv7IGRU2dLFsoOsIKTvTHuV4hUQ38V5REdeqfSV1Vu51DDw4jOkFIL4j/HaEH8HIYPcLraHhcO6Hli8eP42/J6GPk6bpYr1O+CJPi2oBIPJFlq9Fkq+LlcgydooYfdOdAmuvQdELlS8+2JximwMqp4zDCDeycx9J1BHnLE7PvwAiSkx+gAMAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=a6239719c3783610124829259901313a"/>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=a6239719c3783610124829259901313a^sys_idNOT IN29ad5fd5c3b83610124829259901318a,a1ad5fd5c3b83610124829259901318c,e9ad5fd5c3b83610124829259901318e,edad5fd5c3b83610124829259901318c"/>
@@ -381,10 +381,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-24 13:09:02</sys_created_on>
         <sys_id>29ad5fd5c3b83610124829259901318a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:33</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:24:11</sys_updated_on>
         <ui_id>daa086e5-782f-4545-9ed9-8ec9dcb72837</ui_id>
         <values>H4sIAAAAAAAA/+1Uy27bMBD8lUBnWdDTqH0zWgQo0CZAE+TSBsLyIZsoRaokZcc1/O9dipJjNA5atD32Zs5yZ2dWQx8i3buud/Zer6wVaxUtPz/GkVAew9+HSEHLo2VEtWLCCa3qAYijLcjeF260u1qxVijEmLCdhP3DhRLdCMkMH/k7MMjiuImWh59Kbt/xWgLhEhnunBFqje2C4alJockWNKNFPi/yNM3flBmZFyTLWQEcCrw3Nb6d5F59GJD4VR9+HuJ2mqQN87KyNI74k+OKcRzdgLQ8jlpQDJw2+xNiOLBbJZ+BjVAO6SJ/+cmK78idV5W/2HD0SHkono71uLMA040WlN92XmBAHBA59lAt+1bdBB9+27yBXrpp24j0Fvl450V7FaOk5m6jd5+mgddCDQbHotQU5OkEDtdAeset/zBc8haJ6ha6DpdTd0ZvxdCMWtpkLfGQNFLvcKjPTgLUC09wR5BcI/5ugB/ACO/iI9Jgc5BJwApaDzlDOmfQwnFYS/2t94KCwdFKHbaBFyw1onMrnLPlo+pj/DKkZ/k8HBY5meeM5LOMsWJWlozPSFnCjJCMk6KBKqVNIiz4pB6PX/o0LdjA/DLRf0f2L97AAqqmytLq8hso55fewIX0vx78/BfB95/qN3Ofpun/4J8HX9g6BHj0FoLxp7l/9CEPE2zIDeNUWBRy77H303+4L+wxAIKeQzttvnoLz9jxB5v/7Z8NBgAA</values>
         <workflow_reference/>
@@ -407,10 +407,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-24 13:09:02</sys_created_on>
         <sys_id>a1ad5fd5c3b83610124829259901318c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:34</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:24:11</sys_updated_on>
         <ui_id>16a60167-11e5-4761-8292-a0960cb45e3c</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
@@ -433,10 +433,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-24 13:09:02</sys_created_on>
         <sys_id>e9ad5fd5c3b83610124829259901318e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:34</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:24:11</sys_updated_on>
         <ui_id>4034df48-a9bd-404d-8f0c-389d3d0f14c2</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
@@ -459,10 +459,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-24 13:09:02</sys_created_on>
         <sys_id>edad5fd5c3b83610124829259901318c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:34</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:24:11</sys_updated_on>
         <ui_id>48eb6aa8-855b-445b-bff9-5a493f36ef6b</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
@@ -533,15 +533,15 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>auto_approval_for_base_registration</internal_name>
-        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Base Registration Record","reference":"x_1834930_office_0_base_registration","reference_display":"Base Registration","type":"reference","base_type":"reference","usedInstances":{"50e3b071-46c5-4c8f-a183-7f01ec426732":["record"],"3c8b8ef2-1ede-4d80-8738-c407d20f2c82":["base_registration"]},"attributes":{}},{"name":"92b62db2-1dd3-44de-b44a-bb1eb3fa50cf.isadmin","label":"1 - Validate Office Admin➛isAdmin","reference_display":"isAdmin","type":"boolean","base_type":"boolean","usedInstances":{"daa086e5-782f-4545-9ed9-8ec9dcb72837":["condition"]},"attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1f317a32-cca3-47c3-a4fc-f1c7a9db6d55"}},{"name":"Created_1.current.sys_created_by","label":"Trigger - Record Created➛Base Registration Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_1834930_office_0_base_registration","column_name":"sys_created_by","usedInstances":{"92b62db2-1dd3-44de-b44a-bb1eb3fa50cf":["created_by"]}}]</label_cache>
+        <label_cache>[{"name":"Created_1.current.sys_created_by","label":"Trigger - Record Created➛Base Registration Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_1834930_office_0_base_registration","column_name":"sys_created_by","usedInstances":{"92b62db2-1dd3-44de-b44a-bb1eb3fa50cf":["created_by"]}},{"name":"92b62db2-1dd3-44de-b44a-bb1eb3fa50cf.isadmin","label":"1 - Validate Office Admin➛isAdmin","reference_display":"isAdmin","type":"boolean","base_type":"boolean","usedInstances":{"daa086e5-782f-4545-9ed9-8ec9dcb72837":["condition"]},"attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1f317a32-cca3-47c3-a4fc-f1c7a9db6d55"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Base Registration Record","reference":"x_1834930_office_0_base_registration","reference_display":"Base Registration","type":"reference","base_type":"reference","usedInstances":{"50e3b071-46c5-4c8f-a183-7f01ec426732":["record"],"3c8b8ef2-1ede-4d80-8738-c407d20f2c82":["base_registration"]},"attributes":{}}]</label_cache>
         <master>true</master>
         <name>Auto Approval for Base Registration</name>
         <natlang/>
         <outputs/>
         <parent_flow display_value="Auto Approval for Base Registration">a6239719c3783610124829259901313a</parent_flow>
         <remote_trigger_id/>
-        <run_as>system</run_as>
-        <run_with_roles/>
+        <run_as>user</run_as>
+        <run_with_roles name="x_1834930_office_0.office admin">6bf84388c3f8fe501248292599013172</run_with_roles>
         <sc_callable>false</sc_callable>
         <status>published</status>
         <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
@@ -550,7 +550,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6dad5fd5c3b8361012482925990131b0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -558,7 +558,7 @@
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:35</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:24:12</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -642,14 +642,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-24 13:09:03</sys_created_on>
         <sys_id>25ad5fd5c3b8361012482925990131b3</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:34</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:24:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -726,14 +726,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-24 13:09:03</sys_created_on>
         <sys_id>b5ad5fd5c3b8361012482925990131c0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:35</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:24:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -855,10 +855,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-24 13:09:03</sys_created_on>
         <sys_id>71ad5fd5c3b8361012482925990131db</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:35</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:24:12</sys_updated_on>
         <ui_id>48eb6aa8-855b-445b-bff9-5a493f36ef6b</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
@@ -881,10 +881,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-24 13:09:03</sys_created_on>
         <sys_id>bdad5fd5c3b8361012482925990131d8</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:35</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:24:12</sys_updated_on>
         <ui_id>daa086e5-782f-4545-9ed9-8ec9dcb72837</ui_id>
         <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBn2dDTqH0zHAQokCZAE+TSBsKKpGyiFKmSlB1X8L93qYdtNC7aID32Zs5ylzOjHbglunF14+yjXlor1oosvjwHRCiP4e+WKKg4WRCqFRNOaJV3QEC2IBtfuNPuaskqoRBjwtYS9k8XSnQjJDN8mF+DwSmOG7JofykJhp1lCGU0pxFN4lkSh2H8IY2KWVJEMUuAQ4IDJRRc4tXVSOzqtkOC3zJ2+9rj1hmh1sP5dpjyMILaMM8qCgPCXxxXjCOfEqTlAalAMXDa7I+I4cDulTwBG6EcjiP+8osVP/DBOMv8xZKjRMr74vGYD5b1cHkNDpBKQ11jhqt0owXltjeH8RIa6VbnWH/hvvZS+xYHhRy7tWwqddc7Qo4Dxi+ESGORBK+9Uk990FE+bPTu88jyRqjOlaEoNQV5PIFD74rGeT4t4ZJXOCivoK7R0bw2eiu6ZuRSTdcSD9NS6h0+6vdtCtQTn6KxML1B/LqDn8AIr+ITjsHmnmYBVtC8200chzZxcgiI3duVBGtPItHd/HvjKfaSB3F5749voUbUbokvb/mg4xC8XvWzLW/beVzMYlbEk4ixZJKmjE+KNIVJUUS8SErIQlpOhQW/74fD1yYME9ZNfp2L9w17W5LmkJVZFGaXk5TOLiXpQobeGJ/4D/Hx3+4v0xOG4f/4vDs+wub90g/a+mX6d+l59lHp3zx6TYVFao8e+zj+n/jCHpdL0HNop803L+qEHX4CbuibI5kGAAA=</values>
         <workflow_reference/>
@@ -907,10 +907,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-24 13:09:03</sys_created_on>
         <sys_id>f1ad5fd5c3b8361012482925990131da</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:35</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:24:12</sys_updated_on>
         <ui_id>16a60167-11e5-4761-8292-a0960cb45e3c</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
@@ -933,10 +933,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-24 13:09:03</sys_created_on>
         <sys_id>fdad5fd5c3b8361012482925990131db</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:35</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:24:12</sys_updated_on>
         <ui_id>4034df48-a9bd-404d-8f0c-389d3d0f14c2</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
@@ -1003,17 +1003,17 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"b5ad5fd5c3b8361012482925990131fd","name":"plan","plan_signature":null}}</plan>
         <plan_id>a6239719c3783610124829259901313a</plan_id>
-        <snapshot>6dad5fd5c3b8361012482925990131b0</snapshot>
+        <snapshot>598145a5c3b076101248292599013191</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-24 13:09:03</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b5ad5fd5c3b8361012482925990131fd</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 13:22:35</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:24:13</sys_updated_on>
         <trigger display_value="">39ad5fd5c3b8361012482925990131fb</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=a6239719c3783610124829259901313a"/>

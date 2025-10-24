@@ -15,7 +15,7 @@
         <name/>
         <order>9999</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>system_properties_ui.do?sysparm_title=Office%20Manager%20Properties&amp;sysparm_category=x_1834930_office_0_properties</query>
+        <query>system_properties_ui.do?sysparm_title=Properties&amp;sysparm_category=Office%20Base%20API&amp;sysparm_domain_restore=false&amp;sysparm_stack=no</query>
         <report/>
         <require_confirmation>true</require_confirmation>
         <roles>admin</roles>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8c470c60c37032101248292599013179</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>System Properties</sys_name>
         <sys_overrides/>
         <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
         <sys_update_name>sys_app_module_8c470c60c37032101248292599013179</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-21 14:29:48</sys_updated_on>
+        <sys_updated_on>2025-10-24 20:45:38</sys_updated_on>
         <timeline_page/>
         <title>System Properties</title>
         <uncancelable>false</uncancelable>

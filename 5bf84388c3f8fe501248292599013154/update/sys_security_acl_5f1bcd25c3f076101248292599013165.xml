@@ -8,22 +8,22 @@
         <decision_type>allow</decision_type>
         <description/>
         <local_or_existing>Local</local_or_existing>
-        <name>x_1834930_office_0_base_registration.function</name>
+        <name>x_1834930_office_0_function.function2</name>
         <operation display_value="query_range">e66cf897b7300210240b06dd1e11a9fd</operation>
         <script/>
         <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-10-24 15:00:29</sys_created_on>
-        <sys_id>db07bb19c33c3610124829259901312c</sys_id>
+        <sys_created_on>2025-10-24 21:07:54</sys_created_on>
+        <sys_id>5f1bcd25c3f076101248292599013165</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_1834930_office_0_base_registration.function</sys_name>
+        <sys_name>x_1834930_office_0_function.function2</sys_name>
         <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
         <sys_policy/>
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
-        <sys_update_name>sys_security_acl_db07bb19c33c3610124829259901312c</sys_update_name>
+        <sys_update_name>sys_security_acl_5f1bcd25c3f076101248292599013165</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-24 15:00:29</sys_updated_on>
+        <sys_updated_on>2025-10-24 21:07:54</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

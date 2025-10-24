@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=6546000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>office__base_api_integration_temperature_daily_update</internal_name>
+        <label_cache>[{"name":"48ce87e9-cbbd-48f9-a3a7-d8ec6c007bd4.temperature_c","label":"3 - Integration step API for base created flow➛temperature_c","reference_display":"temperature_c","type":"string","base_type":"string","usedInstances":{"c61f30ae-a225-465a-9abf-3419be516dd7":["temperature_c"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"e87c0cb6-0dc5-4f5e-bf7f-903056413b6b"}},{"name":"45c7088d-33a7-4df6-b6be-07b70ba69b10.item","label":"2 - For Each➛Office Base Record","reference":"x_1834930_office_0_office_base","reference_display":"Office Base","type":"reference","base_type":"reference","usedInstances":{"48ce87e9-cbbd-48f9-a3a7-d8ec6c007bd4":["base"],"c61f30ae-a225-465a-9abf-3419be516dd7":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"552c05bb-1e32-47d5-ab08-7e0ed9de4d1b.Records","label":"1 - Look Up Records➛Office Base Records","reference":"x_1834930_office_0_office_base","reference_display":"Office Base","type":"records","base_type":"records","usedInstances":{"45c7088d-33a7-4df6-b6be-07b70ba69b10":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>651b7c2dc37076101248292599013155</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Office / Base API Integration temperature daily update</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>b11b7c2dc370761012482925990131aa</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 18:08:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5312a46dc3fc361012482925990131e9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Office / Base API Integration temperature daily update</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name>sys_hub_flow_5312a46dc3fc361012482925990131e9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:17</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=5312a46dc3fc361012482925990131e9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5312a46dc3fc361012482925990131e9"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2025-10-24 19:57:17</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:57:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b11b7c2dc370761012482925990131aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:17</sys_updated_on>
+        <time>1970-01-01 15:00:00</time>
+        <timer_type>11</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:b11b7c2dc370761012482925990131aa^sys_idNOT IN3d1b7c2dc370761012482925990131aa"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:b11b7c2dc370761012482925990131aa</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2025-10-24 19:57:17</run_start>
+        <run_time>1970-01-01 15:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('b11b7c2dc370761012482925990131aa');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:57:17</sys_created_on>
+        <sys_id>3d1b7c2dc370761012482925990131aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:17</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">b11b7c2dc370761012482925990131aa</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=5312a46dc3fc361012482925990131e9"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=5312a46dc3fc361012482925990131e9"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=5312a46dc3fc361012482925990131e9^sys_idNOT INdb12a46dc3fc361012482925990131e9"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>5312a46dc3fc361012482925990131e9</id>
+        <name>Office / Base API Integration temperature daily update</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 18:08:10</sys_created_on>
+        <sys_id>db12a46dc3fc361012482925990131e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 18:08:10</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=db12a46dc3fc361012482925990131e9"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=5312a46dc3fc361012482925990131e9"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=5312a46dc3fc361012482925990131e9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5312a46dc3fc361012482925990131e9"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=5312a46dc3fc361012482925990131e9^sys_idNOT INef5ab8e9c370761012482925990131bd"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Office / Base API Integration temperature daily update">5312a46dc3fc361012482925990131e9</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:54:08</sys_created_on>
+        <sys_id>ef5ab8e9c370761012482925990131bd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:15</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21SXWvcMBD8K0XPVyPfpV9+K5SDPKSBJuQlBLOW1ncLa0mV5UvckP/ela0eaYjRy87uzM4svn9WDB2yatQtDag2ilzC6IBv54CCHpgstmntDeAsJB9n1aQ44Ub5aDGqptZ6o07AE97M46UVmgw7GLJAoS5dKetvX/RHXcv7UG8breVJ1xyJbUSnmvuHjQoQhZuy8vObFmXxHdgLtEab3VY+rbdfL+ru866rt3YHiJ9E8E2o/72kd6K9ToJPCZ1FWdUDj/hO7ohgrx3P54mjnG2NPcDTSH+wSEXsUcwbXJvnsrU0BoZ5hc3Rk8HrkMi7FUnQceEYz9Pgfq4JpLbYw8TprhxUkGkUPQzZc3ZRLPU3R//469/CPbklYGmyN8DnClKK1E0Jx3xxZBxEqB0gBHKHNkR/ooUsXoZqOVvVs3+UpSMdXAUmG6/kRFDtBf+xwHcQKae4Ehkhvyzp299T3rvmKI7bNbQMlKPsCbn8RKOJFNJ3WXDCYvfl4S+m7lh8tQIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=5312a46dc3fc361012482925990131e9^sys_idNOT IN675ab8e9c370761012482925990131c4,6f5ab8e9c370761012482925990131bf,a75ab8e9c370761012482925990131c3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Office / Base API Integration temperature daily update">5312a46dc3fc361012482925990131e9</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>45c7088d-33a7-4df6-b6be-07b70ba69b10</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:54:09</sys_created_on>
+        <sys_id>675ab8e9c370761012482925990131c4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:54:09</sys_updated_on>
+        <ui_id>c61f30ae-a225-465a-9abf-3419be516dd7</ui_id>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8HPtpFj13HythEKe1gL3ehLV4w+rlOB/DFZTpuF/Pdd2XKadF0XSmAM5ifrSvfec46O7t3Wk8JbeAkIEs2jlMdRHE8JmWZJxNKYRVMRU4DI872KloAnNfBaC1yvqepsYLtNLviMZJkI4pjOgkQUacBSBgGZsRlhNJ2ziITSQLnbYZ6QbaPo5talY4Q/SCU0VN7i7t73GqqxkwHtLbYvtsymgVxRBgoTlzXvSqjM5NMSa5zKYsy+GWm8pGV74Fq46rm0QdyyeCLie/BkoBKA7QqqWvC9klaCmlpvvIXRHQY0UHFdqc3+xIOszMC0pE+t/IH1E2LPFYDUuFNhv8ydQqM4teRw3RhZV0PEUKZG5WrVldXVQMFqCwXtlDnQtmuxHjQWsgUxICy+PNSPN2O/S1n17BxaVXOq9itqjJasM9Da6wAFvSglbRpZrfJG12vZJyOUMlwpXISFqh+xZytXVUi5xR2iQDS8xPiyD99SLS2Jz1gGk3c9+fx7Z/sONBzgvOfcE877i8KjLdeyMR+w8BoczJ3vbMwu3jIAnz/f90HNZys/5VEWJ/OY5HVRoOr5/ofRFn717nW/Ofk4bL7Pxl8tkMnVAORUEkfJvyHljHwUcz6+OJuPs7/kY4foHzPyn+xLpm/Or4Ob7h3bHlgXpysioKbTkPNvHSGxwMGccchmMA84YyJIsmIeUDuiRQY85QTns0jCo8zXJvQ5S7/zjWAdRQ1MBkj+yWqNBS4lKNG+It/4SFyDfO0a7Af+2V5KlJL++z/3zzj3738CLQ4HuMAIAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Office / Base API Integration temperature daily update">5312a46dc3fc361012482925990131e9</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:54:09</sys_created_on>
+        <sys_id>6f5ab8e9c370761012482925990131bf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:15</sys_updated_on>
+        <ui_id>552c05bb-1e32-47d5-ab08-7e0ed9de4d1b</ui_id>
+        <values>H4sIAAAAAAAA/9VXW0/bMBT+K1GeoyohbSm8MRgSD9AJKqQJMctJnNaaa2e20wuI/77j2ElLW6B03QZv9bl+5/g7J+7do08z/9jv5e0wxFGndxiGcRyG3W6c4ihJ4m6ahEk78QOf4zEBS40TRuA4waw05xmKenH7KA6RyHOaEtT8SLAyhhlVBcPzW2ffr5TeF6tMR5RlknD/+O4+8AssIYkm0j9+XFHpeUEQwwlhEGNgMHhXBlCwNf5nzuv1mAT1EXEbWsjMYAkDn8w04RmBVDlmigT+GPMMayHnjUQSnPU5WwhGlGuI6BvjmaIPEL4XGrucQFkpsbrmiFyjrDgdCWhTv9BUcCuxQK1SsHLMr2wBpsUkxyXTdYtBUiqIRwqD2YBwiPKbkZhe1wnPKa/Kc0omUsyaE9Za0qTURJm7IIyMIRAa46KgfIgKKSa0cgYs49aQwaGVMzGFpIoOeQunBngLWoRb5yA/q8S3WFJTxSWEAWcARBncNrJNV6KUVVcmKGWlqhQSc2Vj+U9Vr9Cv0qC0Vbv6kG0RGKhU0kKfgMOEuFKegq0o3gkXlEgFz6jJqZZ4nlI9v7i56g++Xn4bfP+hNNZkcV7n+Zv2u1H/dBnbtnVtdN5UrBuCZzI3BNHehgDg/qcx0LL8eFPwFq9twW+QOz18lQSdxX0rITWynVtit1t4Kxx20t2Yek4Jy54t6S1A1s59Qzovmb+E2xE1NzlWtvXBp9/WH5KmAChDtt+UM8qrjyUA3Q9/w9eX2NEKD6rrX7C3kmGVrjMYe1p4D7tv2+pea/5uAbJ2vAFE3sCi3AC83rN1eEfdeG/UjQ/eR10gzt1jg77p2oYG128ic3W1/YOxx6v2wK4lh+jpvqH+6W45o/fmPDA5V2YzftdwLjPLas5eINieX1wvDFvwN6d7BK4uH7LDiqY0GxK9yF5bZUJPMfu5Se/Y1cxQVd4fv97ar85eN1rMGcwAkkTBVS0/3zrw6FhfD52WFe+2HS64JsOqedtCrD0v8cy7bjBuBO5WBG1yOE639/gO+xeft8g1fuP0RK7/n+Lvyq4Uvv8NuL/cHGUPAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integration step API for base created flow">e5df24adc3307610124829259901310a</action_type>
+        <action_type_parent display_value="Integration step API for base created flow">39f1286dc3fc36101248292599013117</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Office / Base API Integration temperature daily update">5312a46dc3fc361012482925990131e9</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>45c7088d-33a7-4df6-b6be-07b70ba69b10</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:54:09</sys_created_on>
+        <sys_id>a75ab8e9c370761012482925990131c3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:15</sys_updated_on>
+        <ui_id>48ce87e9-cbbd-48f9-a3a7-d8ec6c007bd4</ui_id>
+        <values>H4sIAAAAAAAA/41SS4+bMBD+K5XPAQEmAXLbqlqpUttIfexltUJje0gsGcMak00a5b93HNgo7fawN2Y8M9+LxxPTiq3ZSqkmy0FJzpNilSZplpdZlS2rKkl5mii2YBZapEkBA1K1BzOG8nTKl7JIylJFnEMR5apZRWIlMEoKUSQCVpVIk1h7bM9n2lN66A0cH+Z16sidNsqhZevHpwXrwRGOR8fWp3+e/LHH2oBAQ4vfsUF6kYHLexW87s4S/hYUrlPlbu52TgUe6YLhwaNVSDgNmAEXrAWrwHfuyNbejdRwCGpjzfE6sdPWTwJbOAz6Nx3n2eLm/pod6rTkecWTumsaLbG+fsycrsP1bBstbS4THz5OE3LXUbXpve7shOZBmHcdl50ZW/ttMiEkgw2Mxt8kMw4EjH1QHrTMwpofu+7lav+9theT5kfTSTDXCrx3Woweh5DmqH++9XhqfvlPqmiwJdy6hb7Xdlv3rtvrCxZRb+OtoSJuTPdCHAe9tTHI4EJMuUB8T/1Pl/YDOB0s+UpnaDkg/rL6ecTP4a+pkOelUhClZbWM8oxjVBYlRjLNgQuVqkKU7HxJon4eg7TJqtmUenKdBgbpdO/viMIeZ/3npz/VIOXJXgMAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=5312a46dc3fc361012482925990131e9"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=5312a46dc3fc361012482925990131e9^sys_idNOT IN275ab8e9c370761012482925990131c5,2f5ab8e9c370761012482925990131c1"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2f5ab8e9c370761012482925990131c4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Office / Base API Integration temperature daily update">5312a46dc3fc361012482925990131e9</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>45c7088d-33a7-4df6-b6be-07b70ba69b10</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:54:09</sys_created_on>
+        <sys_id>275ab8e9c370761012482925990131c5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:16</sys_updated_on>
+        <ui_id>dc6b13ee-f9f7-41b4-9c5b-e6b550d185cd</ui_id>
+        <values>H4sIAAAAAAAA/+1YWY+bMBD+K4jnNMUQYJO3qttKfeihbrQvVYWMPSRWHaDG7DZd7X+vbQxhE5K9sr2lSIlnzJzfDDO5cotalrWs5sWLqmKL3J19+jxyWa5p6veVm+MVuDOX1gJLVuSJXJfgjtwLzGtNh28lZ4TJpL2geJRVJcfrc3vllb3i9K6QJeNUgFVXYqG0SBDu7GqLpdUlHKfAlaSXy4IRrZ1RdZpM4yA8QZM48AIUeF4aIYiiSRylWYTjk1Ddax88tZqdeWP9HqfM10xZYNUUgmqbkOeNlKMScgpKcYZ5BSN3hXOKZSHWHUUApu9zviEsWS6VPFdf/lax70r4xNP3MlAOEmh43TGxgWvIjRVNElo/hkJ5KBPWAe96tJHxEbhiX8CQDGF5AzJQX8YHEARyiReDUsqOOyDHv1ZZpZDhmsuXx3MRHcFF/0guBtrFJn3vS8OauYGGF065zTkpeL3K3zUwdLuAnB+qqubK6e3FVVfKKig1XDX+LBizs2Vx+bHF2muWG1stkxcE8+6EpRQsraVOzZULHFZKULLCZcnyRVKK4oKZh5Ubq/GCq8M448WlUqpbyBgTbchYVQcev1b0U0M+x4LpALxVYtTD1wb4ydda621CYC1OTMD0hYoIVsoXROfLGqdTZKu3lwPJViAS07USpRb0uZet3Z704BZ0qqQ/nzfiTRdKM0QjFKE0DiJfdaFgQiIC0RQAITz1vV4X6kHKGOwYgx1tsGMtvrNrtlWZ4Bt6YhlP0LOMrPs0rQ719wL9n4JclfgqaaBpfTPKj4DoJteb5D8NhN/kEhaNHxrAJ14QBN6UhEHcAZhSgCyLU+QDGgTwBqoDNltssk7Pf0z+6ZgceAWiaew985D6OJ430x9/F6S+cwakyGn18Ia70WzgChmahGTf1JfCwNS3DdaeMzfb6O5E8Asnv/+AfQxgd8a8pFBqddZ6EMaZNKZsgbYlH2NJoQRPkBfugasf9eA6NzOB2J5dnZ7hd3dxzyoT/DarTBvk7VwMrSwpZIXovw07Qjf9H14qblGG7qXMf/R43+FucKRvuVt1LEX9O5ZxayFZJ4dWrN41C80N6G6r+Ztr+oMbwE9eDFDmh3Rv5cfBgcrfXQju4NNtG8HkL3iXPbIGhl85o3+uNiqyBFrzJ6qELjNtJWRpGKqhbU8lRP7NkU0lwJFLcLKCq8jqU8/cfW7YuImeagv78IiwD/ybsCervG/EUAmcbdj/wlj30PHts0ZiI6lqIEWBsEopnGvam/b/aM1YKxAw0iddFuKLNnVDu/4BW0wXS9kWAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ef5ab8e9c370761012482925990131c0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Office / Base API Integration temperature daily update">5312a46dc3fc361012482925990131e9</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:54:09</sys_created_on>
+        <sys_id>2f5ab8e9c370761012482925990131c1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:15</sys_updated_on>
+        <ui_id>45c7088d-33a7-4df6-b6be-07b70ba69b10</ui_id>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhj+StMmtwFCgh61AV/RSFAYl0YkwWdIkOaln+L+Xip206HEnm4/k43siB2a76LoYnu1dCGpv2O71bcGUSRj9D8xAi2zHVMQ2sAU7gu5SPAzrdSnyNefLAqtyubqR6yXw/HZ5gznKrcSVLHj2hMJ6GcaRWqUKTkP/8v8M4qC09DiLdOBJW0TPdsO3VOwd1ho4aho0M1C/khQWW9lsi3wrqnJTlXle3q4Kvql4UcoKUG6o7tL5MJv+9gaJnUJ/5aVPUlHmC4bvEY1EGtSADrhgLRgJ0fqe7aLvCPAI8tHo/lpxUCYSHUu170H9I+4iz1Nhg+RI4JS8hvX8kBMsDlYJfHRRWTMhEbiee4TVXWt+TfLTCrCBTsfLCgjpAvGhS5qTillS8/tgT0+XgffKnP3NSW0F6GsEMXrFu4ghrQE1tkRUt+CcMvvaeXtU52bS0mZ7TUHWaHuioencMhBJeEZPBNk94T/O8At4lVz8JBpqHs/u679dmjv5mBXXk2kqCMIrF++I7oizuPEt3evEFKbDkChUoIHPCXu4XHlK9LRkJb5CJ+v/JKmf2PgBPkNjiS8DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=5312a46dc3fc361012482925990131e9"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=5312a46dc3fc361012482925990131e9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_5312a46dc3fc361012482925990131e9"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5312a46dc3fc361012482925990131e9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_5312a46dc3fc361012482925990131e9"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5312a46dc3fc361012482925990131e9"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>office__base_api_integration_temperature_daily_update</internal_name>
+        <label_cache>[{"name":"48ce87e9-cbbd-48f9-a3a7-d8ec6c007bd4.temperature_c","label":"3 - Integration step API for base created flow➛temperature_c","reference_display":"temperature_c","type":"string","base_type":"string","usedInstances":{"c61f30ae-a225-465a-9abf-3419be516dd7":["temperature_c"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"e87c0cb6-0dc5-4f5e-bf7f-903056413b6b"}},{"name":"45c7088d-33a7-4df6-b6be-07b70ba69b10.item","label":"2 - For Each➛Office Base Record","reference":"x_1834930_office_0_office_base","reference_display":"Office Base","type":"reference","base_type":"reference","usedInstances":{"48ce87e9-cbbd-48f9-a3a7-d8ec6c007bd4":["base"],"c61f30ae-a225-465a-9abf-3419be516dd7":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"552c05bb-1e32-47d5-ab08-7e0ed9de4d1b.Records","label":"1 - Look Up Records➛Office Base Records","reference":"x_1834930_office_0_office_base","reference_display":"Office Base","type":"records","base_type":"records","usedInstances":{"45c7088d-33a7-4df6-b6be-07b70ba69b10":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Office / Base API Integration temperature daily update</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Office / Base API Integration temperature daily update">5312a46dc3fc361012482925990131e9</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:57:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>651b7c2dc37076101248292599013155</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:16</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=651b7c2dc37076101248292599013155"/>
+    <sys_variable_value action="delete_multiple" query="document_key=651b7c2dc37076101248292599013155"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=651b7c2dc37076101248292599013155"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=651b7c2dc37076101248292599013155^sys_idNOT IN651b7c2dc37076101248292599013156"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>651b7c2dc37076101248292599013155</id>
+        <name>Office / Base API Integration temperature daily update</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:57:16</sys_created_on>
+        <sys_id>651b7c2dc37076101248292599013156</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=651b7c2dc37076101248292599013156"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=651b7c2dc37076101248292599013155"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=651b7c2dc37076101248292599013155"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=651b7c2dc37076101248292599013155"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=651b7c2dc37076101248292599013155^sys_idNOT INe51b7c2dc37076101248292599013163"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Office / Base API Integration temperature daily update">651b7c2dc37076101248292599013155</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:57:17</sys_created_on>
+        <sys_id>e51b7c2dc37076101248292599013163</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:17</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21SXWvcMBD8K0XPVyPfpV9+K5SDPKSBJuQlBLOW1ncLa0mV5UvckP/ela0eaYjRy87uzM4svn9WDB2yatQtDag2ilzC6IBv54CCHpgstmntDeAsJB9n1aQ44Ub5aDGqptZ6o07AE97M46UVmgw7GLJAoS5dKetvX/RHXcv7UG8breVJ1xyJbUSnmvuHjQoQhZuy8vObFmXxHdgLtEab3VY+rbdfL+ru866rt3YHiJ9E8E2o/72kd6K9ToJPCZ1FWdUDj/hO7ohgrx3P54mjnG2NPcDTSH+wSEXsUcwbXJvnsrU0BoZ5hc3Rk8HrkMi7FUnQceEYz9Pgfq4JpLbYw8TprhxUkGkUPQzZc3ZRLPU3R//469/CPbklYGmyN8DnClKK1E0Jx3xxZBxEqB0gBHKHNkR/ooUsXoZqOVvVs3+UpSMdXAUmG6/kRFDtBf+xwHcQKae4Ehkhvyzp299T3rvmKI7bNbQMlKPsCbn8RKOJFNJ3WXDCYvfl4S+m7lh8tQIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=651b7c2dc37076101248292599013155^sys_idNOT IN291b7c2dc37076101248292599013160,2d1b7c2dc37076101248292599013161,e91b7c2dc37076101248292599013162"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Office / Base API Integration temperature daily update">651b7c2dc37076101248292599013155</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:57:16</sys_created_on>
+        <sys_id>291b7c2dc37076101248292599013160</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:16</sys_updated_on>
+        <ui_id>552c05bb-1e32-47d5-ab08-7e0ed9de4d1b</ui_id>
+        <values>H4sIAAAAAAAA/+VXW2/aMBT+KyjPCCUNUNq3ja5SpbZMBVWaqs5yEgesmTizHS5F/Pcdx85FkLYgUanV3vC5+Hzn8p2Yp41DI+fSGcRd18Veb3Duur7vuv2+H2IvCPx+GLhBN3DaToLnBCwVDhiB4wKzTJ9XyBv43QvfRTyOaUhQ+SPAUhtGVKYMrx+t/ShXtr4bZTijLBIkcS6fnttOigUEUUQ4l5sd1aEoGQ4IA9OJhbmDWq3T8ohynZHd1t1a90bBRaShuG2HrBRJIgIYYswkaTtznERYcbEuJYLgaJSwSjCjiYIbHW28kvQF4g5cbRcTyCokRlceka2TEcdXWOGxElmoMmFNwxmHyklTj4jEOGNqWJcZg1GqKE+Mi0nbeHOWzZN7Uw6nvKBoC0gyCSBIqhPVyG0a8XjGlw8Fymua5DWxSsZDzMoTVkrQIFMaz8YhjMzhIjTHaUqTKUoFX9DcGbDMO1MGh07M+BKCSjpNOjjUwDtQV9y5BvlVLn7Eguos7uAacAZAlMGEINNCyTORl3KBQpbJXCFwIs1dzrbtyLUcMixllTmUHP3NNG5TB5sxMkXTLqGgqfoGVyyITW7bPogoPbcauZAnEdUoZI0tIVXrm/H9aPLj7ufk12+psCLVeZ8t79qfkkA5+oJAwzr8ppQslfZkt00XWCp5J6MS5PGVyATBPx+XjmeHKcE7FAnP3xyyXjVPkguFTC1rHLFreYcJVnrcvB8ApZj3kZ7QVrB+DZ0d95gSFjV9Oa61YufLcfZ/fjk+5bADoAiZ7tGE0SR/BgDQj2KB+/aqvdiZs3y8Kg7kMizDfR7gluKtl6OZcACcggljiN2aGDwNEIu9n4/M7s4vhJYA/skI4J+dhgCbMs2ykA01L15+upuF/Yu2x7v2MII1B2/bRLCjYnrHxjzb7hPYP4rB9WEzmqtXZu7ET8RXGNn+yBUwA1cbDxn+oiWNpkRV0QuriKslZn+a9HbiUNGoPL0PeG5236Rt36soCkxBgkhoXv292YNn0v4O6XWM+LgVcgCWohx3eNV6KME0IrRrBJhOpnlv6nvkppTaIe+e8OH4ab+knm1WIwc927Mv8S/tdER4/gf9Scz1ohAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integration step API for base created flow">e5df24adc3307610124829259901310a</action_type>
+        <action_type_parent display_value="Integration step API for base created flow">39f1286dc3fc36101248292599013117</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>e5df24adc3307610124829259901310a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Office / Base API Integration temperature daily update">651b7c2dc37076101248292599013155</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>45c7088d-33a7-4df6-b6be-07b70ba69b10</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:57:17</sys_created_on>
+        <sys_id>2d1b7c2dc37076101248292599013161</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:17</sys_updated_on>
+        <ui_id>48ce87e9-cbbd-48f9-a3a7-d8ec6c007bd4</ui_id>
+        <values>H4sIAAAAAAAA/42RT2+bQBDFv0q1Z0D8swHfmkSWKrW11LS5RBEadgd7pWUhy+LYtfzdO2sIcdsccmMeb3be/ObxxKRgK7YUoo5TEDxJwmwZhVGc5nERL4oijJIoFMxjGhokZwU9UrUHNbjydEoXPAvzXPhJApmfinrpV8sK/TCrsrCCZVFFYSAtNucz9QnZdwqOD1M7KXwnlTCo2erxyWMdGJpj0bDV6Z9fHw2qoEL1lvTv3PbYucpgjfQwf5W+Tj0/rvTWCBcj8hgeLGqBNL8G1aPHGtACbGuObGXNQIJBEButjrNjJ7Ud92vg0MvfNDSJvau5K3YoozxJiyQs27qWHMv5Y8o6m8uJGjVtLo5PN6OjvgML9xSB28HMPFty9CMzgTUMyt5ea6Nh01nZ6rHFQqU+lIi3amj095Eom5+/uubQU1rsHC4HYKJR3+/al5ntWuoL2emnajmoKyuC4bu1ROXufbmex8BaI6vBuh1ObJA//z/jKL53SFTYUJqyga6Telt2pt3LSwJaqAm2ioqgVu0LJe/lVgfAHZuATgzBmvS7i/wARjpQ3+gZanYTf2n5POAXF7TAJM2FAD/Ki4Wfxgn6eZajz6MUkkpEIqtydvZYf+xvFfT9G0RaonweHIIR6QSvHK/jWriRnf1MofY4cTo//QGw+D1IugMAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Office / Base API Integration temperature daily update">651b7c2dc37076101248292599013155</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>45c7088d-33a7-4df6-b6be-07b70ba69b10</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:57:17</sys_created_on>
+        <sys_id>e91b7c2dc37076101248292599013162</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:17</sys_updated_on>
+        <ui_id>c61f30ae-a225-465a-9abf-3419be516dd7</ui_id>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5XPbeQ0IU1726VCWokFCVZcWBSN7QlYcj42cYBu1f++k8QJXUBskbig7ame8bPfPM/LXG+ZVmzFQlTcX/qRDPwgmHM+j0NfRIHw5yoARJ9NWQ4Z0s4KZVEpWt+DadrAdhseyQWPYzULAljMQpVGMxEJnPGFWHAB0VL43NMWs92OcErXpYHNlYNTRN5poyrM2er6ZspKqOgmixVbbZ+lDqVqQKChrRcD1+fc7aZs16qQTYa5TfQQPHXItctMvq0pQ6CWjs+nDB8t5gqJSAqmxinLIFdgi2rDVrZqKFAhqPPcbMYddzq3faEZPNb6N90c8nZfilSZdCKMy8QJ1IfTNVi4pJOlbapRr0JLrHtNFKbQGHu8H+s3nJdWF3kPsSDMgC5Mk+VnvSJsPGDvPZqaSGDZ1tky78tKL++Kh4uB5InOO0lciaaQYMYVWFtp0diWzpahwU7jDMpS57dJWRX3ugMTlcy7NbTwUlM80J21vs09kC1vj1QF74Ti6y58BZVui/hOxxB4N2X1pj42UNdPpZCGya+mZdIX5kpIOhU6CZKuE1qwrHRpv9BV9+iI76bODOLorQ6Ty6eG2jvzyRCPiR8H4TLgSZGm9A7J+EdAjS8dcN4lJ1/75PvMcADVwQw/uhZ4nbrzw4vY6T52ctYnnBuOPswN8Wdygyvj09vhXybg8zc/s3ud1PV9vWcA+tITJ2ifKJE/G84DRUMilhgvcDmTQqhZGKfLGbTjQsUoI8lpVqjQ+wv52rT4yKPf57QD9BicdqLRqPoVgQabERUDFpNesGdWc8nJlUuOw+fD/OZHvPt9Itf9NzPo5g+Pd9JHkgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=651b7c2dc37076101248292599013155"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=651b7c2dc37076101248292599013155^sys_idNOT IN211b7c2dc3707610124829259901315f,e91b7c2dc3707610124829259901315d"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2f5ab8e9c370761012482925990131c4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Office / Base API Integration temperature daily update">651b7c2dc37076101248292599013155</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>45c7088d-33a7-4df6-b6be-07b70ba69b10</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:57:16</sys_created_on>
+        <sys_id>211b7c2dc3707610124829259901315f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:16</sys_updated_on>
+        <ui_id>dc6b13ee-f9f7-41b4-9c5b-e6b550d185cd</ui_id>
+        <values>H4sIAAAAAAAA/+1ZbW/iOBD+K1E+c1ycQCh8W7VXaaW921NB/bJaRY4zAWtNknWcdrmq//3GifMCBLbs0hUrVUJqPXbGz8w8z8SGJzstVFaofJG+y3O+TOzZp88Dmyfahv8/2Qldgz2zo0JSxdMkUJsM7IH9QEWh7fAtE5xxFdQLcC7ieSbo5t4s+csssTpL2IqLSILZLqMSd1Eg7dnTzhSP0MNoOvHGV2Q08RyPeI4T+gR8fzTxw9ink6sxOhQ0BIFLb8we1qLCeQB++WeGe6Wc1eMPxsV1bUxlpCERxxlgnAqSCBBNTEUOA3tNk4iqVG4aiwQafUxEa1jxRKE/Wy/+lvP/cMeRo9fFgPExqOaaYWDyVpnjG6roXMmCqUKapRXcqi51wH3ZPVYcE5TzPGh93IHA6Qfo8yHNXI8P0vXxL0gGiaLLXi9ZM9vjx33GQkcQ00Ko6/OFSM4QonumED0dYlW+j1k5NbM9zTsairq4qSjWyT8VX+0mIffHhFYtufm+3oocUUGmKaw5aQgaz1fp413Nv1uelFjNpEgZFc2IKiV5WChdmicbBKzRUbCmWcaTZZDJ9IGXD2MY6+FS4GAYi/QRN9VdZUiZBjJExdDhLdpvSvM9lVwn4G90gw8/D+x8k18LmudtGlAewddCI6mSYmIIyhSWjzDJM/WO6QoauLpoRvidqii+BhmUrS1AIKDHnfrtN66T+1QYk8gnPgknnu9in/JGzGfgTwEIoVPX6fSpDpdKXFaJy9K4LAPsxRGYZlZmvbQHnYm6q2E7gT8Xlf0VGlvp6xydra8V7GvnJOn8LvxHFuVBRWcTW7n5q+iiolLLrfMK4crxPM+ZsrE3aYQQRQBxPAmJC6RXCC3le8AZjiPxYFmmqsvt9431jdlvzC7J0/OCJtOJ84dD8GM5zkx/3H2qu9YcWJpE+cmch5iMxuzQITWEnkPqLuM7oLd7+rb9w76b+rhygUfVN9r/QtrvHWWDFIHo4neEQGNVgtuhfm0+jfYRoyPijA/Q3vU7tF+UBx25exK3OhBfHswpNzjvAmXRXivqvO+Wp++mFkKcyu7LujE0l57jd6nvbEZO2sz96VtNQ8Xem0w9uyN2TOklar1GyDbBsZtlZ5nhcEvE0xvD9hcbP9wlXuc+RGJ3HB3sDRPvSG/Yvwe9APqPXoRGF9gffslr8yeV1P92G7wpDNOygqgQZ9ZTHI7HeMg8oCff3T5iYuYttQIrTgWmVI86qA6hNQlrGbwtnruO3YhnfEbxeO62eNg66YLrE9K8nb4AQZ1+Do3nQCVb3XIQusRlXX63r9s+a5ZXvptMM54jhIW2va9/TdATG4yQs67pMZVfNPjW9vw/hgXuiJcYAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ef5ab8e9c370761012482925990131c0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Office / Base API Integration temperature daily update">651b7c2dc37076101248292599013155</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:57:16</sys_created_on>
+        <sys_id>e91b7c2dc3707610124829259901315d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:16</sys_updated_on>
+        <ui_id>45c7088d-33a7-4df6-b6be-07b70ba69b10</ui_id>
+        <values>H4sIAAAAAAAA/51TXW+jMBD8L34miI8kbfJWtapU6a6V0qovpwot9pJYZ2zONkkp4r/fOhBa9bFPsOPd2ZnB9My0vmm9ezE3zsm9Zts/bxGTOmD03jMNNbItkx5rxyJ2BNWGuu9Xq4wnq7JcpJhni+WVWC2gTK4XV5ig2AhcirSMd8iNFW4YaFRI1yjoXn/OwA9SCYuTyAYsafNo2bb/diQFLUg3otqkyYbn2TrPkiS7XqblOi/TTOSAYk2ECkpU1Powuftm1ndNKO0oYQJ+TTO7GaVHEJElEcN3j1ogra9AOYxYDVqAN7ZjW29bAiyCeNKqmzsOUnuiY6H33ckP2pgmSWiskAxxHA/nsphyHOHqDjw8EzX3rZ1a+cFIjm6MQmAFrfK3X7Gx4anx0uhxxEOpLtNGtbV+HJNgM8HlsxHSOhKBTTAapE8+queDOe0uKu+lPocyHSrDQc0VeG9l2fqgp2eosCaiooamkXpfNNYc5XmYtNTxXlERV8qcaGm4ojHwIDymXCG+J/zuDL+ClcHFb6Kh4SFirnO3Cpz79EIhFv/aoGR0NnkoxhjCCLey8Te04IiT3OEt3PqRe86US0cSXgL2cPlXwkFHN0jyr9DJ2L9B/Cc2/AcexiStdQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=651b7c2dc37076101248292599013155"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=651b7c2dc37076101248292599013155"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_651b7c2dc37076101248292599013155"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_651b7c2dc37076101248292599013155"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_651b7c2dc37076101248292599013155"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_651b7c2dc37076101248292599013155"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>5312a46dc3fc361012482925990131e9</sys_id>
+        <latest_snapshot>651b7c2dc37076101248292599013155</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=5312a46dc3fc361012482925990131e9^sys_idNOT IN351b7c2dc370761012482925990131ad"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>5312a46dc3fc361012482925990131e9</plan_id>
+        <snapshot>651b7c2dc37076101248292599013155</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 19:57:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>351b7c2dc370761012482925990131ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 19:57:17</sys_updated_on>
+        <trigger display_value="">b11b7c2dc370761012482925990131aa</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=5312a46dc3fc361012482925990131e9"/>
+</record_update>
