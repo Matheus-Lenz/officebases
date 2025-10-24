@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">4b73e7ddc3b836101248292599013162</canvas>
+        <component display_value="List - Simple">2b1c080881e05dc63b917044290b233f</component>
+        <component_props>{"table":"task","columnPreferenceKey":"","fixedQuery":"sys_class_name=x_1834930_office_0_base_registration^ref_x_1834930_office_0_base_registration.stateIN-5,1","followFilters":true,"listTitle":"Pending Participants Registrations","columns":"ref_x_1834930_office_0_base_registration.number,ref_x_1834930_office_0_base_registration.user,ref_x_1834930_office_0_base_registration.base,ref_x_1834930_office_0_base_registration.base.manager","query":"active=true","groupByField":"","hideViewAll":false,"hideHighlightedValues":false,"showBorder":true,"bare":false,"highlightedValueConfigId":"","hideHighlightContent":false,"highlightContent":{"patterns":[],"color":""},"hideLinks":false,"nrlLandmark":true,"wordWrap":false,"overrideWordWrapUserPref":false,"maxCharLimit":4000,"hideEmptyStateImage":false,"hidePersonalization":false,"hideDotwalk":false,"hideColumnReorder":false,"hideRowSelector":false,"hideColumnGrouping":false,"hideColumnResizing":false,"hideColumnFiltering":false,"hideColumnSorting":false,"hideHeader":false,"hideTitle":false,"hideTitleRowCount":false,"hideLastRefreshedText":false,"hideRefreshButton":false,"hideInlineEditing":false,"isDashboard":true,"id":"columns","value":"ref_x_1834930_office_0_base_registration.number,ref_x_1834930_office_0_base_registration.user,ref_x_1834930_office_0_base_registration.base,ref_x_1834930_office_0_base_registration.base.manager","noDebounce":true,"propLabel":"Columns"}</component_props>
+        <h>18</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 14:15:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1ccc23d9c3f836101248292599013139</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name>par_dashboard_widget_1ccc23d9c3f836101248292599013139</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 14:35:46</sys_updated_on>
+        <visualization/>
+        <w>32</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

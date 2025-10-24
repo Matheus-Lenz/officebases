@@ -19,20 +19,21 @@
         <order/>
         <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-    if (isLoading || newValue === '') return;
+  if (isLoading || newValue === '') return;
 
-    var ga = new GlideAjax('x_1834930_office_0.BaseRegistrationValidation');
-    ga.addParam('sysparm_name', 'checkBaseCapacity');
-    ga.addParam('sysparm_base_id', newValue);
+  var ga = new GlideAjax('x_1834930_office_0.BaseRegistrationValidation');
+  ga.addParam('sysparm_name', 'checkBaseCapacity');
+  ga.addParam('sysparm_base_id', newValue);
 
-    ga.getXMLAnswer(function(response) {
-        if (response === 'FULL') {
-            spModal.alert('The maximum capacity for this base has been reached. Please select another base.')
-                .then(function() {
-                    g_form.setValue('base', '');
-                });
-        }
-    });
+  ga.getXMLAnswer(function(response) {
+    if (response === 'FULL') {
+      var msg = 'The maximum capacity for this base has been reached.';
+      g_form.setValue('base', '');
+      g_form.showFieldMsg('base', msg, 'error');
+      g_form.addErrorMessage(msg);
+      spModal.alert(msg);
+    }
+  });
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -40,7 +41,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>458e5e49c3b0f21012482925990131d5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Base Registration capacity validation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
@@ -48,7 +49,7 @@
         <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
         <sys_update_name>catalog_script_client_458e5e49c3b0f21012482925990131d5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-23 18:23:10</sys_updated_on>
+        <sys_updated_on>2025-10-24 13:28:11</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

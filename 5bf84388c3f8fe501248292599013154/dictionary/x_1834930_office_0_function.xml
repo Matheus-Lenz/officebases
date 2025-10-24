@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="9afc4f8cc3f8fe50124829259901314a" label="Function" max_length="40" name="x_1834930_office_0_function" type="collection">
-        <element attributes="edge_encryption_enabled=false,unique=true" display="true" label="Function" mandatory="true" max_length="250" name="function" type="string"/>
+        <element label="Function" max_length="250" name="function" type="string"/>
         <element label="Description" max_length="4000" name="description" type="string"/>
+        <element display="true" label="Function" max_length="250" name="function2" type="string"/>
     </element>
 </database>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission">
+    <par_dashboard_permission action="INSERT_OR_UPDATE">
+        <can_read>true</can_read>
+        <can_share>false</can_share>
+        <can_write>false</can_write>
+        <dashboard display_value="Office/Bases manager">c373671dc3b8361012482925990131fd</dashboard>
+        <group display_value="Office Manager App Admins" name="Office Manager App Admins">2b78c528c3b432101248292599013177</group>
+        <owner>false</owner>
+        <role/>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-24 14:58:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bca6ff95c33c36101248292599013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>c373671dc3b8361012482925990131fd</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Office Manager" source="x_1834930_office_0">5bf84388c3f8fe501248292599013154</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Office Manager">5bf84388c3f8fe501248292599013154</sys_scope>
+        <sys_update_name>par_dashboard_permission_bca6ff95c33c36101248292599013186</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-24 14:58:13</sys_updated_on>
+        <user/>
+    </par_dashboard_permission>
+</record_update>
